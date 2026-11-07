@@ -1,0 +1,2466 @@
+{
+  "@astryx.pagination.label": {
+    "defaultMessage": "分页",
+    "description": "分页导航区域的 Aria 标签。"
+  },
+  "@astryx.pagination.previous": {
+    "defaultMessage": "转到上一页",
+    "description": "上一页按钮的 aria 标签。"
+  },
+  "@astryx.pagination.next": {
+    "defaultMessage": "转到下一页",
+    "description": "下一页按钮的 aria 标签。"
+  },
+  "@astryx.pagination.previousBy": {
+    "defaultMessage": "返回 {step, number} {step, plural, one {页} other {页}}",
+    "description": "当每次点击前进超过一页时（`step` prop > 1），上一页按钮的 aria 标签。`step` 是跳过的页数。"
+  },
+  "@astryx.pagination.nextBy": {
+    "defaultMessage": "前进 {step, number} {step, plural, one {页} other {页}}",
+    "description": "当下一页按钮每次点击前进超过一页时（`step` 属性 > 1），该按钮的 aria 标签。`step` 表示跳过的页数。"
+  },
+  "@astryx.pagination.first": {
+    "defaultMessage": "转到第一页",
+    "description": "输入分页变体中首页按钮（« 双尖括号）的 aria 标签。"
+  },
+  "@astryx.pagination.last": {
+    "defaultMessage": "转到最后一页",
+    "description": "输入分页变体中最后一页按钮（» 双箭头）的 aria 标签。"
+  },
+  "@astryx.pagination.goToPage": {
+    "defaultMessage": "转到第 {page, number} 页",
+    "description": "单个页码按钮的 aria 标签。`page` 从 1 开始计数。"
+  },
+  "@astryx.pagination.goToPageInput": {
+    "defaultMessage": "转到页面",
+    "description": "输入分页变体中可编辑页码/行号框的 aria 标签。不含数字——该框本身承载值。"
+  },
+  "@astryx.pagination.pageLabel": {
+    "defaultMessage": "页面",
+    "description": "输入分页变体中可编辑框前的可见标签。示例：“Page [ 1 ] / 10”。"
+  },
+  "@astryx.pagination.ofTotalPages": {
+    "defaultMessage": "/ {total, number}",
+    "description": "在输入分页变体中，可编辑框之后显示的总数。例如：“Page [ 1 ] / 10”中的“/ 10”。"
+  },
+  "@astryx.pagination.pageIndicators": {
+    "defaultMessage": "页面指示器",
+    "description": "用于圆点变体页面指示器组的 Aria 标签。"
+  },
+  "@astryx.pagination.itemsPerPage": {
+    "defaultMessage": "每页条数",
+    "description": "分页大小选择器的标签。"
+  },
+  "@astryx.pagination.count": {
+    "defaultMessage": "{from, number}–{to, number}，共 {total, number}",
+    "description": "分页栏上可见的“当前范围/总数”文本。示例：“1–20 of 347”；短破折号由译者选择。"
+  },
+  "@astryx.pagination.pageOfTotal": {
+    "defaultMessage": "第 {current, number} 页，共 {total, number} 页",
+    "description": "紧凑分页变体上可见的“第 X 页，共 Y 页”文本；屏幕阅读器也会朗读。保持简短——它位于紧凑工具栏中。"
+  },
+  "@astryx.pagination.pageAnnounce": {
+    "defaultMessage": "第 {current, number} 页",
+    "description": "当页面发生变化且总数未知时，屏幕阅读器播报。"
+  },
+  "@astryx.powersearch.editor.field": {
+    "defaultMessage": "字段",
+    "description": "PowerSearch 筛选器构建器弹出层中，字段选择器下拉框上方的名词形式标签（用于选择按哪个数据列筛选）。不是操作按钮。"
+  },
+  "@astryx.powersearch.editor.operator": {
+    "defaultMessage": "操作符",
+    "description": "PowerSearch 筛选构建器弹出框中运算符下拉框上方的名词形式标签。指比较动词（\"is\"、\"contains\"），而非数学或电话运算符。"
+  },
+  "@astryx.powersearch.editor.addFilter": {
+    "defaultMessage": "+ 添加筛选器",
+    "description": "PowerSearch 筛选器构建器中分组内的按钮标签；用于添加另一行筛选条件（例如“Status = Active”）。开头的“+ ”是加号字符。"
+  },
+  "@astryx.powersearch.editor.removeFilter": {
+    "defaultMessage": "移除筛选",
+    "description": "PowerSearch 编辑器中筛选行旁边“×”图标按钮的屏幕阅读器专用标签；用于移除该行。祈使动词。"
+  },
+  "@astryx.powersearch.editor.groupOperator": {
+    "defaultMessage": "分组运算符",
+    "description": "用于组合筛选组内同级筛选器的 AND/OR 切换开关的屏幕阅读器专用标签。视力正常用户只看到“AND”或“OR”。"
+  },
+  "@astryx.powersearch.editor.group": {
+    "defaultMessage": "组",
+    "description": "嵌套筛选组标签在未选择 AND/OR 组合运算符时显示的备用名词标签。使用名词（“a cluster”），而非动词“to group”。"
+  },
+  "@astryx.powersearch.editor.delete": {
+    "defaultMessage": "删除",
+    "description": "PowerSearch 筛选编辑器弹出框内的按钮标签；删除当前正在编辑的筛选行。祈使动词形式。"
+  },
+  "@astryx.powersearch.editor.cancel": {
+    "defaultMessage": "取消",
+    "description": "PowerSearch 筛选编辑器弹出层内的按钮标签；关闭弹出层并放弃待处理的编辑。祈使动词形式。"
+  },
+  "@astryx.powersearch.editor.apply": {
+    "defaultMessage": "应用",
+    "description": "PowerSearch 筛选器编辑器弹出框内的主按钮标签；确认编辑后的筛选器。祈使动词；使用方可覆盖为“保存”。"
+  },
+  "@astryx.powersearch.valueEditor.value": {
+    "defaultMessage": "值",
+    "description": "PowerSearch 值编辑器中单个自由文本/数字输入框上方的名词形式标签（例如 `Name contains acme` 中的 \"acme\"）。不是动词，也不是 \"worth\"。"
+  },
+  "@astryx.powersearch.valueEditor.values": {
+    "defaultMessage": "值",
+    "description": "PowerSearch 值编辑器中多值 chip 输入框上方的复数名词表单标签。应与您语言中的单数对应项 `Value` 保持一致。"
+  },
+  "@astryx.powersearch.valueEditor.time": {
+    "defaultMessage": "时间",
+    "description": "时间选择器（HH:MM）上方的名词表单标签，位于 PowerSearch 值编辑器中。指时钟时间，而非时长或年代。"
+  },
+  "@astryx.powersearch.valueEditor.date": {
+    "defaultMessage": "日期",
+    "description": "PowerSearch 值编辑器中日历日期选择器上方的名词表单标签。指日历日期，不是浪漫约会或水果。"
+  },
+  "@astryx.powersearch.valueEditor.relativeDate": {
+    "defaultMessage": "相对日期",
+    "description": "PowerSearch 值编辑器中相对日期选择器的标签（例如“最近 7 天”）。"
+  },
+  "@astryx.powersearch.valueEditor.startDate": {
+    "defaultMessage": "开始日期",
+    "description": "PowerSearch 值编辑器中起始日期选择器上方的名词形式标签。与 `End date` 配对使用——在你的语言中保持两者平行。"
+  },
+  "@astryx.powersearch.valueEditor.endDate": {
+    "defaultMessage": "结束日期",
+    "description": "PowerSearch 值编辑器中结束日期选择器上方的名词形式标签。与 `Start date` 配对使用——两者保持平行。"
+  },
+  "@astryx.powersearch.valueEditor.entities": {
+    "defaultMessage": "实体",
+    "description": "“Entities”是行话——是实体选择器（人员、团队、项目）上方的复数名词形式标签。如果你的语言中没有对应说法，优先使用“items”这类自然的集合名词。"
+  },
+  "@astryx.powersearch.valueEditor.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "搜索输入框中的占位符，用于 PowerSearch 实体/自动补全选择器。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.powersearch.valueEditor.enterValuePlaceholder": {
+    "defaultMessage": "输入值…",
+    "description": "PowerSearch 值编辑器中自由文本单值输入框内的占位符。祈使动词；末尾的 `…` 是一个字符。"
+  },
+  "@astryx.powersearch.valueEditor.addValuesPlaceholder": {
+    "defaultMessage": "添加值…",
+    "description": "多值 chip 输入框内的占位符，用户在其中输入条目并按 Enter 键将每条添加为一个 chip。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.powersearch.valueEditor.enterNumberPlaceholder": {
+    "defaultMessage": "输入数字…",
+    "description": "PowerSearch 值编辑器数字输入框中的占位符。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.powersearch.valueEditor.selectValuesPlaceholder": {
+    "defaultMessage": "选择值…",
+    "description": "PowerSearch 值编辑器中用于从固定枚举列表选择值的下拉框占位符。祈使动词（用户选择，而非输入）。"
+  },
+  "@astryx.powersearch.operator.contains": {
+    "defaultMessage": "包含",
+    "description": "PowerSearch 字符串运算符，以内联形式渲染为 `<field> contains <value>`（例如 `Name contains acme`）。小写动词形式。"
+  },
+  "@astryx.powersearch.operator.notContains": {
+    "defaultMessage": "不包含",
+    "description": "PowerSearch 否定字符串运算符。示例：`Name does not contain test`。小写；与 `contains` 配对使用。"
+  },
+  "@astryx.powersearch.operator.startsWith": {
+    "defaultMessage": "以……开头",
+    "description": "PowerSearch 字符串前缀运算符。示例：`Email starts with admin@`。小写。"
+  },
+  "@astryx.powersearch.operator.notStartsWith": {
+    "defaultMessage": "不以以下内容开头",
+    "description": "PowerSearch 否定前缀运算符。示例：`Email does not start with test`。小写；与 `starts with` 配对使用。"
+  },
+  "@astryx.powersearch.operator.endsWith": {
+    "defaultMessage": "以……结尾",
+    "description": "PowerSearch 字符串后缀运算符。示例：`Email ends with @meta.com`。小写。"
+  },
+  "@astryx.powersearch.operator.notEndsWith": {
+    "defaultMessage": "不以以下内容结尾",
+    "description": "PowerSearch 否定后缀运算符。示例：`Email does not end with @gmail.com`。小写；与 `ends with` 配对使用。"
+  },
+  "@astryx.powersearch.operator.is": {
+    "defaultMessage": "是",
+    "description": "PowerSearch 用于字符串/枚举的相等运算符。示例：`Status is Active`。与 `operator.equals`（数字）分开——翻译可能不同。"
+  },
+  "@astryx.powersearch.operator.isNot": {
+    "defaultMessage": "不是",
+    "description": "PowerSearch 用于字符串/枚举的不等运算符。示例：`Status is not Draft`。与 `is` 配对使用；区别于 `operator.notEquals`。"
+  },
+  "@astryx.powersearch.operator.equals": {
+    "defaultMessage": "是",
+    "description": "PowerSearch 数值相等运算符。示例：`Age is 30`。与 `operator.is` 使用相同的英文“is”，但单独存在，以便数字场景可分化（例如“equals”）。"
+  },
+  "@astryx.powersearch.operator.notEquals": {
+    "defaultMessage": "不是",
+    "description": "PowerSearch 数值不等运算符。示例：`Count is not 0`。与 `operator.equals` 相同的分歧选项。"
+  },
+  "@astryx.powersearch.operator.greaterThan": {
+    "defaultMessage": "大于",
+    "description": "PowerSearch 数值运算符，严格大于。示例：`Age is greater than 18`。小写。"
+  },
+  "@astryx.powersearch.operator.lessThan": {
+    "defaultMessage": "小于",
+    "description": "PowerSearch 数值运算符，严格小于。示例：`Priority is less than 5`。小写。"
+  },
+  "@astryx.powersearch.operator.greaterThanOrEqual": {
+    "defaultMessage": "大于或等于",
+    "description": "PowerSearch 数值运算符 ≥。示例：`Age is greater than or equal to 21`。如符合习惯，可用更简短的形式（如“≥”）。"
+  },
+  "@astryx.powersearch.operator.lessThanOrEqual": {
+    "defaultMessage": "小于或等于",
+    "description": "PowerSearch 数值运算符，≤。示例：`Priority is less than or equal to 3`。如果符合习惯，使用更简短的形式也可以。"
+  },
+  "@astryx.powersearch.operator.before": {
+    "defaultMessage": "早于",
+    "description": "PowerSearch 日期运算符，严格早于。示例：`Created is before 2024-01-01`。时间维度，非空间维度。"
+  },
+  "@astryx.powersearch.operator.after": {
+    "defaultMessage": "在之后",
+    "description": "PowerSearch 日期运算符，严格晚于。示例：`Updated is after 2024-06-01`。时间型。"
+  },
+  "@astryx.powersearch.operator.between": {
+    "defaultMessage": "介于",
+    "description": "PowerSearch 日期操作符，闭区间。示例：`Created is between 2024-01-01 and 2024-06-30`。其中 `and <end>` 部分单独组合。"
+  },
+  "@astryx.powersearch.operator.isTrue": {
+    "defaultMessage": "为 true",
+    "description": "PowerSearch 布尔运算符：匹配真值。示例：`Is admin is true`。与 `is false` 配对使用；字段可以是肯定句或 yes/no 问句。"
+  },
+  "@astryx.powersearch.operator.isFalse": {
+    "defaultMessage": "是 false",
+    "description": "PowerSearch 布尔运算符：匹配假值。示例：`Is admin is false`。与 `is true` 配对使用。"
+  },
+  "@astryx.powersearch.operator.isAnyOf": {
+    "defaultMessage": "是以下任意一项",
+    "description": "PowerSearch 列表运算符：值在集合中。示例：`Status is any of [Active, Paused, Draft]`。值列表单独组合；与 `is none of` 配对使用。"
+  },
+  "@astryx.powersearch.operator.isNoneOf": {
+    "defaultMessage": "不属于",
+    "description": "PowerSearch 否定列表运算符：值不在集合中。示例：`Status is none of [Archived, Deleted]`。与 `is any of` 配对使用。"
+  },
+  "@astryx.powersearch.valueEditor.itemsCount": {
+    "defaultMessage": "{count, number} {count, plural, one {项} other {项}}",
+    "description": "当所选项目列表过长时，紧凑筛选标签上显示的溢出摘要。示例：`3 items` 或 `1 item`。"
+  },
+  "@astryx.powersearch.valueEditor.entitiesCount": {
+    "defaultMessage": "{count, number} {count, plural, one {个实体} other {个实体}}",
+    "description": "当所选实体列表过长时，在紧凑筛选标签上显示溢出摘要。示例：`5 entities` 或 `1 entity`。与 `itemsCount` 翻译配合使用。"
+  },
+  "@astryx.powersearch.valueEditor.dateRange": {
+    "defaultMessage": "日期范围",
+    "description": "当日期范围值无法格式化时，在筛选标签中内联渲染的回退小写名词（例如 `Created is between date range`）。保持小写。"
+  },
+  "@astryx.powersearch.valueEditor.filtersCount": {
+    "defaultMessage": "{count, number} {count, plural, one {个筛选条件} other {个筛选条件}}",
+    "description": "筛选标签内嵌套筛选值时的摘要。例如：`3 filters` 或 `1 filter`。"
+  },
+  "@astryx.powersearch.resultCount": {
+    "defaultMessage": "{count, number} {count, plural, one {条结果} other {条结果}}",
+    "description": "PowerSearch 输入框旁的实时结果计数文本，变化时向屏幕阅读器播报。示例：`12 results`、`1 result`；保持简洁。"
+  },
+  "@astryx.powersearch.sheet.filtersTitle": {
+    "defaultMessage": "筛选器",
+    "description": "PowerSearch 触摸面板的标题和无障碍名称，该面板列出当前生效的筛选条件（实验性底部面板呈现）。复数名词。"
+  },
+  "@astryx.powersearch.sheet.addFilter": {
+    "defaultMessage": "添加筛选器",
+    "description": "PowerSearch 触摸流程中的按钮标签：在筛选器面板标题栏中打开字段列表；在值步骤中确认新筛选器。使用祈使动词；不带前导加号。"
+  },
+  "@astryx.powersearch.sheet.noFilters": {
+    "defaultMessage": "未应用筛选条件",
+    "description": "PowerSearch 筛选器面板在无激活筛选器时的空状态标题（实验性底部面板呈现）。中性语气。"
+  },
+  "@astryx.powersearch.sheet.noFiltersInDraft": {
+    "defaultMessage": "无筛选条件",
+    "description": "PowerSearch 筛选器面板空状态标题，用于面板草稿为空但字段仍有已应用筛选器的情况，Done 会替换这些筛选器。此时不得声称筛选器已应用或已移除。语气中立。"
+  },
+  "@astryx.powersearch.sheet.noFiltersDescription": {
+    "defaultMessage": "添加筛选条件以缩小结果范围，更快找到所需内容。",
+    "description": "PowerSearch Filters 面板空状态下的引导文案，位于其 Add filter 操作上方。一句话即可。"
+  },
+  "@astryx.powersearch.sheet.clearAll": {
+    "defaultMessage": "清除全部",
+    "description": "PowerSearch 筛选器面板底部的按钮标签，用于移除所有可编辑筛选器。祈使动词 + 限定词。"
+  },
+  "@astryx.powersearch.sheet.clearAllTitle": {
+    "defaultMessage": "清除所有筛选条件？",
+    "description": "Clear all 在 PowerSearch 触摸流程中打开的确认对话框的标题和无障碍名称。一个简短的问题。"
+  },
+  "@astryx.powersearch.sheet.clearAllDescription": {
+    "defaultMessage": "这会移除该搜索中的所有可编辑筛选条件。",
+    "description": "PowerSearch“全部清除”确认对话框的正文文本。只读筛选器会保留，因此文本中会列出可编辑的筛选器。"
+  },
+  "@astryx.powersearch.sheet.clearAllConfirm": {
+    "defaultMessage": "清除筛选条件",
+    "description": "PowerSearch“全部清除”确认对话框的破坏性操作：移除可编辑的筛选条件。祈使动词 + 复数名词。"
+  },
+  "@astryx.powersearch.sheet.clearAllCancel": {
+    "defaultMessage": "保留筛选条件",
+    "description": "PowerSearch“全部清除”确认对话框的安全操作：关闭对话框，不做任何更改。祈使动词 + 复数名词。"
+  },
+  "@astryx.powersearch.sheet.done": {
+    "defaultMessage": "完成",
+    "description": "PowerSearch 筛选器面板底部的按钮标签，用于提交面板中的筛选草稿并关闭面板。简短，表示筛选任务结束。"
+  },
+  "@astryx.powersearch.sheet.discardTitle": {
+    "defaultMessage": "放弃更改？",
+    "description": "更改筛选草稿后，有人尝试关闭 PowerSearch 筛选面板时显示的确认对话框标题。一个问句。"
+  },
+  "@astryx.powersearch.sheet.discardDescription": {
+    "defaultMessage": "你对筛选条件的更改尚未应用。",
+    "description": "PowerSearch 筛选面板中未保存更改关闭确认框的正文。点击“完成”会应用草稿；关闭则会丢弃草稿。"
+  },
+  "@astryx.powersearch.sheet.keepEditing": {
+    "defaultMessage": "继续编辑",
+    "description": "PowerSearch 未保存更改关闭确认中安全取消操作的标签。它关闭确认并返回未修改的草稿。"
+  },
+  "@astryx.powersearch.sheet.discardConfirm": {
+    "defaultMessage": "放弃更改",
+    "description": "PowerSearch 未保存关闭确认中破坏性操作的标签。该操作关闭面板，不应用筛选草稿。"
+  },
+  "@astryx.powersearch.sheet.search": {
+    "defaultMessage": "搜索",
+    "description": "PowerSearch“添加筛选器”面板顶部内容搜索框的屏幕阅读器专用标签；其建议列表内联显示在下方。名词或动词，以读起来最自然为准。"
+  },
+  "@astryx.powersearch.sheet.searchResults": {
+    "defaultMessage": "搜索结果",
+    "description": "PowerSearch 添加筛选器面板内容搜索下内联建议列表的屏幕阅读器专用名称。复数名词。"
+  },
+  "@astryx.powersearch.sheet.searchFields": {
+    "defaultMessage": "搜索筛选器",
+    "description": "仅屏幕阅读器可见的标签，用于 PowerSearch 添加筛选器面板中的字段列表筛选框，在配置包含八个或更多字段时显示。祈使动词 + 复数名词。"
+  },
+  "@astryx.powersearch.sheet.searchFieldsPlaceholder": {
+    "defaultMessage": "搜索筛选器…",
+    "description": "PowerSearch“添加筛选器”表单中字段列表筛选框内的占位符。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.powersearch.sheet.ungroupedFields": {
+    "defaultMessage": "通用",
+    "description": "属于任何分组的字段列表标题，显示在命名分组之前。一个简短名词。"
+  },
+  "@astryx.powersearch.sheet.noMatchingFields": {
+    "defaultMessage": "没有筛选条件与你的搜索匹配",
+    "description": "PowerSearch“添加筛选器”面板中，当字段列表筛选器未匹配到任何字段时显示的空状态文本。语气中性。"
+  },
+  "@astryx.powersearch.sheet.tryDifferentSearch": {
+    "defaultMessage": "尝试其他搜索。",
+    "description": "PowerSearch 添加筛选器面板空搜索结果下方的引导语（“未找到结果”、“没有筛选器与你的搜索匹配”）。一句话。"
+  },
+  "@astryx.powersearch.sheet.noResults": {
+    "defaultMessage": "未找到结果",
+    "description": "PowerSearch 的“添加筛选器”面板中，当内容搜索对输入的查询没有建议时显示的空状态文本。语气中立（不带错误感）。"
+  },
+  "@astryx.powersearch.sheet.filterUnavailable": {
+    "defaultMessage": "此过滤器已不再可用",
+    "description": "当配置更新移除了正在编辑的字段或运算符时，PowerSearch 值步骤中显示的消息；取消仍是退出方式，Filters 行保留其移除操作。"
+  },
+  "@astryx.powersearch.sheet.removeFilter": {
+    "defaultMessage": "移除 {field} 筛选器",
+    "description": "PowerSearch 筛选器面板行上尾部移除按钮的无障碍名称和工具提示；field 是该筛选器的字段标签（例如“移除状态筛选器”）。"
+  },
+  "@astryx.powersearch.sheet.relativeDaysAgo": {
+    "defaultMessage": "{count, number} {count, plural, one {天} other {天}}前",
+    "description": "PowerSearch 触摸面板中的相对日期选择行，表示过去时间（例如“3 天前”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.relativeDaysFromNow": {
+    "defaultMessage": "{count, number} {count, plural, one {天} other {天}}后",
+    "description": "PowerSearch 触摸面板中的相对日期选择行，位于未来（例如“3 天后”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.relativeWeeksAgo": {
+    "defaultMessage": "{count, number} {count, plural, one {周} other {周}}前",
+    "description": "PowerSearch 触摸面板中的相对日期选择行，表示过去时间（例如“3 周前”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.relativeWeeksFromNow": {
+    "defaultMessage": "{count, number} {count, plural, one {周} other {周}}后",
+    "description": "PowerSearch 触控面板中的相对日期选择行，位于未来（例如“3 周后”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.relativeMonthsAgo": {
+    "defaultMessage": "{count, number} {count, plural, one {个月} other {个月}}前",
+    "description": "PowerSearch 触摸面板中的相对日期选择行，表示过去时间（例如“3 个月前”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.relativeMonthsFromNow": {
+    "defaultMessage": "{count, number} {count, plural, one {个月} other {个月}}后",
+    "description": "PowerSearch 触摸面板中的相对日期选择行，指向未来（例如“3 个月后”）。弹出式编辑器列出相同的选项。"
+  },
+  "@astryx.powersearch.sheet.fieldOperator": {
+    "defaultMessage": "{field} {operator}",
+    "description": "PowerSearch 触摸面板中字段标签与运算符标签的组合：值步骤的标题、运算符单选按钮的名称，以及 Filters 行的第一部分（例如“Status is”）。译者可以调整这两部分的顺序。"
+  },
+  "@astryx.powersearch.sheet.labelValue": {
+    "defaultMessage": "{label} {value}",
+    "description": "Filters 行中“字段运算符”文本与其值拼接后的结果，即移除公告读取到的内容（例如“Status is Open”）。译者可以调整这两部分的顺序。"
+  },
+  "@astryx.alertDialog.cancel": {
+    "defaultMessage": "取消",
+    "description": "AlertDialog（模态确认框）次要/关闭按钮上的按钮标签。使用祈使动词；使用方通常会用具体任务的文本覆盖。"
+  },
+  "@astryx.appShell.mobileNavigation": {
+    "defaultMessage": "移动端导航",
+    "description": "仅屏幕阅读器可访问的名称，用于小视口下仅移动端的导航区域。“Mobile”指手机/平板（小屏幕），不是“可移动”。"
+  },
+  "@astryx.appShell.skipToContent": {
+    "defaultMessage": "跳转到内容",
+    "description": "跳过链接的文本——页面上第一个可聚焦元素，仅在键盘聚焦时可见。激活后焦点跳过导航，直接跳到主内容区。祈使动词；保持简短。"
+  },
+  "@astryx.avatar.nameWithStatus": {
+    "defaultMessage": "{name}，{status}",
+    "description": "为显示状态指示器的 Avatar 提供屏幕阅读器可访问名称；将人员姓名与状态标签组合，例如 \"Jane Doe, Online\"。{name} = 头像的名称/替代文本，{status} = 状态圆点的标签。按区域设置调整分隔符和顺序。"
+  },
+  "@astryx.avatarGroup.label": {
+    "defaultMessage": "头像",
+    "description": "供屏幕阅读器使用的用户头像横向集群回退名称。复数名词；使用方通常用“团队成员”“参会者”等覆盖。"
+  },
+  "@astryx.avatarGroup.keyboardHint": {
+    "defaultMessage": "使用方向键在头像之间移动",
+    "description": "仅屏幕阅读器可见的说明，通过 aria-describedby 关联到共享同一 Tab 停靠点的一组交互式头像。告知键盘用户左/右方向键可在头像间移动焦点。仅当该组包含交互式（链接/按钮）头像时才会播报。"
+  },
+  "@astryx.avatarGroup.overflow": {
+    "defaultMessage": "{count, number} 条更多",
+    "description": "AvatarGroup 末尾“+N”溢出指示器的无障碍名称——用于播报还有多少个头像未显示。示例：`5 more`。可见的“+N”文本不受影响；这里仅设置 aria-label。"
+  },
+  "@astryx.banner.dismiss": {
+    "defaultMessage": "关闭",
+    "description": "“关闭” = 关闭/隐藏此通知（不是“拒绝某人”）。用于 Banner 上小 X 按钮的提示，以及当 Banner 标题不是纯文本时该按钮的 aria 标签。"
+  },
+  "@astryx.banner.dismissTitled": {
+    "defaultMessage": "{dismiss} {title}",
+    "description": "Banner 上小 X 按钮的 aria 标签，说明它关闭的是哪个 Banner，以便区分堆叠的 Banner。`{dismiss}` 是来自 `banner.dismiss` 的已翻译工具提示文本；请在消息中逐字保留，使可见标签与无障碍标签保持一致。`{title}` 是 Banner 自身的标题文本——例如：`Dismiss Upload failed`。占位符可自由调整顺序。"
+  },
+  "@astryx.calendar.previousMonth": {
+    "defaultMessage": "上个月",
+    "description": "日历月份标题中左箭头按钮的屏幕阅读器专用标签（向后导航一个月）。与 `calendar.nextMonth` 配对使用。"
+  },
+  "@astryx.calendar.nextMonth": {
+    "defaultMessage": "下个月",
+    "description": "日历月份标题中右箭头按钮的屏幕阅读器专用标签（向前导航一个月）。与 `calendar.previousMonth` 配对使用。"
+  },
+  "@astryx.calendar.daySelected": {
+    "defaultMessage": "{date}，已选择",
+    "description": "Calendar 日期按钮的无障碍名称，该按钮是当前单选模式下的选中项。`{date}` 是本地化的完整日期，例如“Thursday, January 15, 2026”。末尾的状态词告知屏幕阅读器用户，聚焦的日期已被选中。"
+  },
+  "@astryx.calendar.dayRangeStart": {
+    "defaultMessage": "{date}，范围开始",
+    "description": "用于开始所选日期范围（或进行中范围的首次选择）的日历日期按钮的无障碍名称。`{date}` 是本地化的完整日期。"
+  },
+  "@astryx.calendar.dayRangeEnd": {
+    "defaultMessage": "{date}，范围结束",
+    "description": "用于结束所选日期范围的日历日期按钮的无障碍名称。`{date}` 是本地化的完整日期。与 `calendar.dayRangeStart` 配对使用。"
+  },
+  "@astryx.calendar.dayRangeStartAndEnd": {
+    "defaultMessage": "{date}、范围起点和范围终点",
+    "description": "用于同时开始和结束一个已完成单日范围的日历日期按钮的无障碍名称。`{date}` 是本地化的完整日期。"
+  },
+  "@astryx.calendar.dayInRange": {
+    "defaultMessage": "{date}，范围内",
+    "description": "所选日期范围内（非端点）的日历日期按钮的无障碍名称。`{date}` 是本地化的完整日期。"
+  },
+  "@astryx.calendar.rangeStartAnnounce": {
+    "defaultMessage": "开始日期 {date}。请选择结束日期。",
+    "description": "日历范围选择首次选取后的屏幕阅读器播报。`{date}` 是本地化的完整日期。提示用户第二次选取将完成范围选择。"
+  },
+  "@astryx.calendar.rangeCompleteAnnounce": {
+    "defaultMessage": "已选范围：{start} 至 {end}。",
+    "description": "屏幕阅读器在第二次选择完成 Calendar 范围选择后播报。`{start}` 和 `{end}` 是按时间顺序排列的本地化完整日期。"
+  },
+  "@astryx.calendar.rangeClearedAnnounce": {
+    "defaultMessage": "已清除开始日期 {date}。请选择开始日期。",
+    "description": "当用户再次点击进行中范围的起点时，屏幕阅读器播报的内容；此时会清除该起点，而不是完成一个零长度范围。`{date}` 是本地化的完整日期。"
+  },
+  "@astryx.carousel.label": {
+    "defaultMessage": "轮播",
+    "description": "仅供屏幕阅读器使用的后备名称，用于水平滚动的一行项目。如果“carousel”在你的语言环境中不常见，请使用标准术语（例如“slider”）。"
+  },
+  "@astryx.carousel.scrollLeft": {
+    "defaultMessage": "向左滚动",
+    "description": "Carousel 中左箭头按钮的屏幕阅读器专用标签。与 `carousel.scrollRight` 配对使用；在 RTL 语言环境中，需协调两者，使左右方向与布局一致。"
+  },
+  "@astryx.carousel.scrollRight": {
+    "defaultMessage": "向右滚动",
+    "description": "轮播组件中右箭头按钮的屏幕阅读器专用标签。与 `carousel.scrollLeft` 配对使用；RTL 注意事项相同。"
+  },
+  "@astryx.carousel.slideLabel": {
+    "defaultMessage": "第 {current, number} 张幻灯片，共 {total, number} 张",
+    "description": "轮播中单个幻灯片的屏幕阅读器可访问名称，用于说明其位置。`current` 是从 1 开始的幻灯片编号；`total` 是幻灯片总数。"
+  },
+  "@astryx.chart.label": {
+    "defaultMessage": "图表",
+    "description": "无主序列且使用者未提供标题的图表所用的通用屏幕阅读器名称。名词（指数据可视化），非动词。"
+  },
+  "@astryx.chart.labelWithSeries": {
+    "defaultMessage": "按 {xKey} 分组的 {series} 图表",
+    "description": "为没有使用者提供标题的图表生成屏幕阅读器名称。`{series}` 是按区域设置格式化的系列标签列表；`{xKey}` 是使用者的水平数据字段名。"
+  },
+  "@astryx.chart.dataTableCaption": {
+    "defaultMessage": "{label} 数据",
+    "description": "仅屏幕阅读器可见的说明文字，用于镜像 Chart 的小数据表格。`{label}` 是 Chart 解析后的无障碍名称。"
+  },
+  "@astryx.chartLegend.label": {
+    "defaultMessage": "图表图例",
+    "description": "ChartLegend 渲染的系列标签和色块列表的屏幕阅读器专用可访问名称。"
+  },
+  "@astryx.chat.status.sending": {
+    "defaultMessage": "发送",
+    "description": "发送中的消息下方显示的发送状态说明文字。属于 sending → sent → delivered → read（或 failed）状态集，保持时态/体一致。"
+  },
+  "@astryx.chat.status.sent": {
+    "defaultMessage": "已发送",
+    "description": "消息到达服务器后显示的聊天发送状态说明文字。属于 sending → **sent** → delivered → read（或 failed）这一组状态——保持时态一致。"
+  },
+  "@astryx.chat.status.delivered": {
+    "defaultMessage": "已送达",
+    "description": "接收方设备收到消息后显示的聊天发送状态说明文字。属于 sending → sent → **delivered** → read（或 failed）状态集的一部分。"
+  },
+  "@astryx.chat.status.read": {
+    "defaultMessage": "读取",
+    "description": "消息被接收方打开后显示的发送状态说明。英文用过去分词（“has been read”，/rɛd/），不是现在时动词——属于 sending → sent → delivered → **read** 这一组。"
+  },
+  "@astryx.chat.status.failed": {
+    "defaultMessage": "失败",
+    "description": "发送尝试出错时显示的聊天发送状态说明文字。属于该集合——终态失败分支，与已发送 → 已送达 → 已读的成功路径相互独立。"
+  },
+  "@astryx.chat.messageAriaLabel": {
+    "defaultMessage": "消息 {status}",
+    "description": "聊天消息行的屏幕阅读器专用无障碍名称。`{status}` 会插入本地化的状态词（如 `Message sent`、`Message delivered`）——可按需调整顺序。"
+  },
+  "@astryx.chat.pastedText.expand": {
+    "defaultMessage": "展开",
+    "description": "聊天输入框中代表长粘贴文本块的 chip 上的按钮标签；点击可显示完整内容。“Expand”此处指展开更多内容，并非物理上的变大。"
+  },
+  "@astryx.chat.pastedText.label": {
+    "defaultMessage": "{lines, plural, =1 {{chars, plural, other {{chars} 个字符}} other {{chars} 个字符}} other {{lines} 行，{chars, plural, other {{chars} 个字符}}}}",
+    "description": "聊天输入框中粘贴文本标签上的计数标签及其悬停预览。{lines} 是文本行数，{chars} 是字符数。单行分支省略行数。译者可调整计数顺序并本地化缩写单位。"
+  },
+  "@astryx.checkboxList.item.checkbox": {
+    "defaultMessage": "复选框",
+    "description": "当富可见标签通过 aria-labelledby 为复选框命名时，内部使用的本地化隐藏文本。它不会成为计算名称；当富内容没有文本时，调用方必须提供 aria-label。"
+  },
+  "@astryx.commandPalette.emptySearch": {
+    "defaultMessage": "无结果",
+    "description": "当用户查询无匹配项时，CommandPalette 内显示的回退空状态文本。非常简短（2 个词）；语气中性。"
+  },
+  "@astryx.commandPalette.emptyBootstrap": {
+    "defaultMessage": "输入以搜索",
+    "description": "首次打开 CommandPalette 时、用户尚未输入任何内容时显示的空状态引导文案。祈使句片段。"
+  },
+  "@astryx.commandPalette.resultCount": {
+    "defaultMessage": "{count, number} 个{count, plural, one {结果} other {结果}}",
+    "description": "仅屏幕阅读器可读的公告，说明用户输入时有多少命令匹配 CommandPalette 查询。示例：`12 results`、`1 result`；保持简洁。"
+  },
+  "@astryx.commandPalette.noResultsFor": {
+    "defaultMessage": "{query} 没有结果",
+    "description": "未被任何组件读取：CommandPalette 改为播报其渲染后的空搜索消息（`emptySearchText`）。此前用于查询无匹配结果时仅供屏幕阅读器播报；`{query}` 是用户原样输入的搜索文本。"
+  },
+  "@astryx.commandPalette.loading": {
+    "defaultMessage": "加载中",
+    "description": "仅屏幕阅读器可见的公告：CommandPalette 搜索已开始，正在获取结果。现在进行时形式；与可见的加载指示器一致。"
+  },
+  "@astryx.dateRangeInput.presetDateRanges": {
+    "defaultMessage": "预设日期范围",
+    "description": "DateRangeInput 弹出层内快速选择预设范围侧边栏的屏幕阅读器专用可访问名称（例如“最近 7 天”“本月”）。"
+  },
+  "@astryx.dateTimeInput.timePlaceholder": {
+    "defaultMessage": "选择时间",
+    "description": "DateTimeInput 中空时间段槽位内的灰色占位符。“Time”指时钟时间（HH:MM），不是时长。"
+  },
+  "@astryx.dialog.close": {
+    "defaultMessage": "关闭",
+    "description": "“关闭”指关闭/收起对话框，不是“附近”的意思（英语同形异义词）。这是 Dialog 右上角 X 按钮的 Aria 标签和工具提示。"
+  },
+  "@astryx.dropdownMenu.label": {
+    "defaultMessage": "菜单",
+    "description": "仅供屏幕阅读器使用的下拉菜单浮层回退名称。非常通用；使用者通常会覆盖。名词（“a menu”），非祈使句。"
+  },
+  "@astryx.dropdownMenu.back": {
+    "defaultMessage": "返回",
+    "description": "DropdownMenu 底部面板中，从嵌套操作列表返回父级的按钮标签。命令式导航操作。"
+  },
+  "@astryx.dropdownMenu.backTo": {
+    "defaultMessage": "返回 {parent}",
+    "description": "从下钻子菜单返回其来源菜单的菜单行。{parent} 是该菜单的名称（例如“返回操作”）。命令式导航操作。"
+  },
+  "@astryx.lightbox.close": {
+    "defaultMessage": "关闭",
+    "description": "“关闭” = 关闭/收起（不是“附近”）。X 按钮上的屏幕阅读器专用标签，用于关闭 Lightbox。"
+  },
+  "@astryx.lightbox.previous": {
+    "defaultMessage": "上一个",
+    "description": "Lightbox 中左箭头按钮的屏幕阅读器专用标签（用于切换到上一媒体项）。与 `lightbox.next` 配对使用。"
+  },
+  "@astryx.lightbox.next": {
+    "defaultMessage": "下一个",
+    "description": "Lightbox 中右箭头按钮的屏幕阅读器专用标签（用于切换到下一个媒体项）。与 `lightbox.previous` 配对使用。"
+  },
+  "@astryx.chatTypingIndicator.one": {
+    "defaultMessage": "{name} 正在输入…",
+    "description": "礼貌地公布当前正在聊天中输入的单个用户的状态。`name` 是应用提供的显示名称。使用现在进行时形式；末尾省略号是单个 … 字符。"
+  },
+  "@astryx.chatTypingIndicator.many": {
+    "defaultMessage": "{names} 正在输入…",
+    "description": "在聊天中多人同时输入时，礼貌地提示状态。`names` 已由 Intl.ListFormat 按区域设置拼接好，因此翻译不得自行添加连接词——将 `{names}` 放在拼接列表应处的位置。"
+  },
+  "@astryx.chatTypingIndicator.others": {
+    "defaultMessage": "{count, number} {count, plural, one {其他} other {其他}}",
+    "description": "聊天输入状态在三人及以上同时输入时的溢出元素：显示第一个名字，其余折叠为此短语，再由 Intl.ListFormat 与名字拼接。作为列表最后一项渲染，例如“Ana 和另外 2 人”。"
+  },
+  "@astryx.listInput.emptyTitle": {
+    "defaultMessage": "暂无{itemName}",
+    "description": "当 lab ListInput 的集合中没有记录时，在其内部显示的 EmptyState 标题。`{itemName}` 是使用方对单条记录使用的单数名词（例如 \"guest\"）；源码会在其后直接追加字母 \"s\" 来构成复数，这种方式只适用于规则的英语复数形式。如果你的语言无法用这种方式将插值名词变为复数，请改写句子以避开 `{itemName}`（例如 \"尚未添加任何 {itemName}\"）。"
+  },
+  "@astryx.listInput.emptyDescription": {
+    "defaultMessage": "添加 {itemName} 即可开始。",
+    "description": "当集合中没有记录时，在实验性 ListInput 内显示的空状态辅助文本。`{itemName}` 是使用方对单条记录使用的单数名词（例如 \"guest\"）。"
+  },
+  "@astryx.listInput.addItem": {
+    "defaultMessage": "添加 {itemName}",
+    "description": "用于向实验室 ListInput 追加新记录的按钮上的无障碍标签。`{itemName}` 是使用方对单条记录的单数名词（例如 \"guest\"）。"
+  },
+  "@astryx.listInput.removeItem": {
+    "defaultMessage": "移除 {itemName} {position, number}",
+    "description": "用于从实验室 ListInput 中删除一条记录的按钮的无障碍标签和工具提示。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是其从 1 开始的行号（例如“Remove guest 2”）。"
+  },
+  "@astryx.listInput.removeUnavailable": {
+    "defaultMessage": "列表禁用期间无法执行移除操作",
+    "description": "当 ListInput 被禁用或正在加载时，显示在“移除”按钮上的工具提示，用于说明为何无法执行该操作。"
+  },
+  "@astryx.listInput.reorderItem": {
+    "defaultMessage": "重新排序 {itemName} {position, number}",
+    "description": "用于在 lab ListInput 中重排单条记录的拖拽手柄按钮上的无障碍标签。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是其从 1 开始的行号（例如“Reorder guest 2”）。"
+  },
+  "@astryx.listInput.fieldLabelWithPosition": {
+    "defaultMessage": "{header}，{itemName} 第 {position, number} 项，共 {total, number} 项",
+    "description": "lab ListInput 行内字段的无障碍名称，用于第一行之后的各行，以区分重复的列标签。`{header}` 是该列自身的标签（如“Name”）；`{itemName}` 是使用者为单条记录指定的单数名词；`{position}`/`{total}` 是该行的从 1 开始的索引和总行数（如“Name, guest 2 of 3”）。"
+  },
+  "@astryx.listInput.reorderInstructions": {
+    "defaultMessage": "使用向上或向下箭头将此项目移动一个位置。按空格键或回车键将其拾起，以便进行扩展键盘重排序。",
+    "description": "通过 aria-describedby 被每个重排按钮引用的视觉隐藏说明，描述如何使用实验室 ListInput 行的键盘重排手柄。"
+  },
+  "@astryx.listInput.announceAdded": {
+    "defaultMessage": "已添加 {itemName} {position, number}。",
+    "description": "仅屏幕阅读器可感知的实时播报，在实验室 ListInput 追加新记录后触发。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是新记录的从 1 开始的行号。"
+  },
+  "@astryx.listInput.announceRemoved": {
+    "defaultMessage": "已移除 {itemName} {position, number}。",
+    "description": "仅屏幕阅读器可感知的实时播报，在从实验室 ListInput 中删除记录后触发。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是被删除记录原先从 1 开始的行号。"
+  },
+  "@astryx.listInput.announceGrabbed": {
+    "defaultMessage": "{itemName} {position, number} 已抓取。使用方向键移动，按空格键或回车键放下，按 Escape 键取消。",
+    "description": "仅屏幕阅读器可感知的实时播报：当实验室 ListInput 记录的键盘重排手柄进入扩展的“提起”模式时触发。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是其从 1 开始的行号。"
+  },
+  "@astryx.listInput.announceMovedToPosition": {
+    "defaultMessage": "{itemName} 已移至第 {position, number} 位，共 {total, number} 位。",
+    "description": "仅屏幕阅读器可见的实时播报，每次 lab ListInput 记录的重排位置变化时触发（方向键单步、键盘提升模式预览或指针拖拽）。`{itemName}` 是使用方对单条记录的单数名词；`{position}`/`{total}` 是该记录新的从 1 开始的位置和总行数。"
+  },
+  "@astryx.listInput.announceReorderCancelled": {
+    "defaultMessage": "重新排序已取消。",
+    "description": "仅屏幕阅读器可听到的实时播报：当实验性 ListInput 的重新排序进行中被取消时（按 Escape 键、失焦，或拖拽过程中集合变为禁用/加载状态）。"
+  },
+  "@astryx.listInput.announceReturnedToPosition": {
+    "defaultMessage": "{itemName} 已返回位置 {position, number}。",
+    "description": "仅屏幕阅读器可感知的实时播报：当实验室 ListInput 提交重排、但记录位置实际未变时触发。`{itemName}` 是使用方对单条记录的单数名词；`{position}` 是其未变的、从 1 开始的行号。"
+  },
+  "@astryx.listInput.announceDropped": {
+    "defaultMessage": "{itemName} 已放置在 {total, number} 个位置中的第 {position, number} 个位置。",
+    "description": "当实验室 ListInput 重排提交且记录位置确实发生变化时，向屏幕阅读器播报的实时通知。`{itemName}` 是使用方对单条记录的单数名词；`{position}`/`{total}` 分别是其新的从 1 开始的位置和总行数。"
+  },
+  "@astryx.listInput.announceAlreadyAtBoundary": {
+    "defaultMessage": "This {itemName} is already {boundary, select, first {first} last {last} other {}}.",
+    "description": "仅屏幕阅读器可感知的实时播报：当方向键重排尝试因记录已在列表该端而无效时触发。`{itemName}` 是使用方对单条记录的单数名词；`{boundary}` 始终恰为 \"first\" 或 \"last\"。"
+  },
+  "@astryx.diffViewer.label": {
+    "defaultMessage": "差异",
+    "description": "当文件没有可用于命名的路径时，实验室 DiffViewer 可滚动代码区域的无障碍名称。"
+  },
+  "@astryx.diffViewer.renamedPath": {
+    "defaultMessage": "{oldPath} → {newPath}",
+    "description": "当文件被重命名时，在实验室 DiffViewer 头部显示的文件路径。`{oldPath}` 和 `{newPath}` 是文件路径，必须保持不翻译；保持箭头从旧路径指向新路径。"
+  },
+  "@astryx.diffViewer.statusAdded": {
+    "defaultMessage": "已添加",
+    "description": "在实验室 DiffViewer 文件头中标记该变更所创建文件的徽章。"
+  },
+  "@astryx.diffViewer.statusDeleted": {
+    "defaultMessage": "已删除",
+    "description": "在实验性 DiffViewer 文件头中，标记该变更所删除文件的徽章。"
+  },
+  "@astryx.diffViewer.statusRenamed": {
+    "defaultMessage": "已重命名",
+    "description": "在实验室 DiffViewer 文件头中标记变更将文件移动到新路径的徽章。"
+  },
+  "@astryx.diffViewer.addedCount": {
+    "defaultMessage": "+{count, number}",
+    "description": "在实验性 DiffViewer 文件头中显示的紧凑新增行数，例如“+12”。对屏幕阅读器隐藏，屏幕阅读器改为读取 `@astryx.diffViewer.stats`。"
+  },
+  "@astryx.diffViewer.removedCount": {
+    "defaultMessage": "−{count, number}",
+    "description": "DiffViewer 文件头部显示的已删除行数的紧凑计数，例如 \"−3\"（减号）。对屏幕阅读器隐藏，屏幕阅读器改为读取 `@astryx.diffViewer.stats`。"
+  },
+  "@astryx.diffViewer.stats": {
+    "defaultMessage": "{added, plural, one {# 行新增} other {# 行新增}}, {removed, plural, one {# 行删除} other {# 行删除}}",
+    "description": "用于实验室 DiffViewer 文件头部行数的屏幕阅读器文本，例如“新增 12 行，删除 3 行”。"
+  },
+  "@astryx.diffViewer.added": {
+    "defaultMessage": "已添加",
+    "description": "屏幕阅读器文本，用于标记实验性 DiffViewer 中某一行是本次变更新增的；视力正常的读者会看到 + 号和带底色的行。"
+  },
+  "@astryx.diffViewer.removed": {
+    "defaultMessage": "已移除",
+    "description": "屏幕阅读器文本，用于标记实验性 DiffViewer 中某一行被变更删除；视力正常的读者会看到 - 号和带底色的行。"
+  },
+  "@astryx.diffViewer.lineNumberButton": {
+    "defaultMessage": "{side, select, old {原始行 {line, number}} other {变更行 {line, number}}}",
+    "description": "lab DiffViewer 中可点击行号的无障碍标签（调用方用它在该行发起评论）。`side` 为 `old` 表示变更前的文件，为 `new` 表示变更后的文件；`line` 是该版本中的行号。"
+  },
+  "@astryx.diffViewer.columnOldLine": {
+    "defaultMessage": "（文件路径: i18n key: defaultMessage）：\n\n原始行号",
+    "description": "仅屏幕阅读器可见的标题，位于实验性 DiffViewer 列中，该列包含变更前文件中的行号。与 `@astryx.diffViewer.lineNumberButton`（“Original line …”）配对使用。"
+  },
+  "@astryx.diffViewer.columnNewLine": {
+    "defaultMessage": "更改行号",
+    "description": "仅屏幕阅读器可见的标题，位于实验性 DiffViewer 列中，包含变更后文件中的行号。与 `@astryx.diffViewer.lineNumberButton`（“Changed line …”）配合使用。"
+  },
+  "@astryx.diffViewer.columnChange": {
+    "defaultMessage": "变更",
+    "description": "仅屏幕阅读器可见的实验性 DiffViewer 列标题，用于标记每一行是新增还是删除（名词：变更类型）。"
+  },
+  "@astryx.diffViewer.columnCode": {
+    "defaultMessage": "代码",
+    "description": "仅屏幕阅读器可见的标题，用于实验性 DiffViewer 单列（统一）视图中源代码列的列头。"
+  },
+  "@astryx.diffViewer.columnOldCode": {
+    "defaultMessage": "请提供需要翻译的 Markdown 内容。",
+    "description": "变更前文件源代码列的仅屏幕阅读器可见表头，位于实验室 DiffViewer 的并排（分栏）视图中。"
+  },
+  "@astryx.diffViewer.columnNewCode": {
+    "defaultMessage": "更改的代码",
+    "description": "变更后文件在 lab DiffViewer 并排（拆分）视图中源代码列的仅屏幕阅读器可见表头。"
+  },
+  "@astryx.diffViewer.binary": {
+    "defaultMessage": "未显示二进制文件",
+    "description": "当文件为二进制且没有文本差异时，用于替代实验室 DiffViewer 中行变更的消息。"
+  },
+  "@astryx.diffViewer.noChanges": {
+    "defaultMessage": "无内容变更",
+    "description": "当文件仅更改了路径或模式、没有行变更可显示时，实验室 DiffViewer 中显示的消息。"
+  },
+  "@astryx.diffViewer.largeChange": {
+    "defaultMessage": "大改动：{count, plural, one {# 行} other {# 行}}",
+    "description": "实验室 DiffViewer 中折叠块的标签。变更过大，无法逐行比较，因此该块将旧行显示为已删除、新行显示为已添加，折叠至读者展开。`{count}` 是该块中删除行数与添加行数之和；两侧可能有相同的行，因为该块未进行比较。保持简短：它与 Show full diff 按钮共用一行。"
+  },
+  "@astryx.diffViewer.showFullDiff": {
+    "defaultMessage": "显示完整差异",
+    "description": "位于实验室 DiffViewer 中 `@astryx.diffViewer.largeChange` 旁边的按钮，用于显示大变更中被折叠的行。与 `@astryx.diffViewer.hideFullDiff` 配合使用。"
+  },
+  "@astryx.diffViewer.hideFullDiff": {
+    "defaultMessage": "隐藏完整差异",
+    "description": "位于实验室 DiffViewer 中 `@astryx.diffViewer.largeChange` 旁的按钮，在 `@astryx.diffViewer.showFullDiff` 显示大变更的行之后，再次折叠这些行。"
+  },
+  "@astryx.markdownHeadingLinks.copied": {
+    "defaultMessage": "链接已复制",
+    "description": "Markdown 标题复制按钮的无障碍名称，以及复制成功后向 polite live region 播报约 1.5 秒的文本。句意为“链接已复制”；与 `markdownHeadingLinks.copy` 配对使用。"
+  },
+  "@astryx.markdownHeadingLinks.copy": {
+    "defaultMessage": "复制 {heading} 的链接",
+    "description": "Markdown 标题复制按钮在默认状态下的无障碍名称。`{heading}` 是标题的纯文本，文本为空时则为生成的 id；与 `markdownHeadingLinks.copied` 配对使用。"
+  },
+  "@astryx.richTextEditor.tabEscapeHint": {
+    "defaultMessage": "按 Escape 再按 Tab，可将焦点移出编辑器。",
+    "description": "仅屏幕阅读器可见的提示，附加在 RichTextEditor 文本区域上。Tab 键在编辑器内缩进文本，因此该提示告知键盘用户移出编辑器的双键组合。"
+  },
+  "@astryx.richTextEditor.toolbar.label": {
+    "defaultMessage": "文本格式",
+    "description": "RichTextEditor 上方格式工具栏的无障碍名称。"
+  },
+  "@astryx.richTextEditor.toolbar.actions": {
+    "defaultMessage": "格式化操作",
+    "description": "RichTextEditor 工具栏中容纳所有格式控件的组的无障碍名称。"
+  },
+  "@astryx.richTextEditor.toolbar.undo": {
+    "defaultMessage": "撤销",
+    "description": "撤销 RichTextEditor 中上一次编辑的工具栏按钮的标签和工具提示。"
+  },
+  "@astryx.richTextEditor.toolbar.redo": {
+    "defaultMessage": "重做",
+    "description": "RichTextEditor 中用于重做上一次已撤销编辑的工具栏按钮的标签和工具提示。"
+  },
+  "@astryx.richTextEditor.toolbar.historyDivider": {
+    "defaultMessage": "历史记录与块格式",
+    "description": "RichTextEditor 工具栏中，撤销/重做按钮与块格式菜单之间分隔线的屏幕阅读器名称。"
+  },
+  "@astryx.richTextEditor.toolbar.blockFormat": {
+    "defaultMessage": "块格式",
+    "description": "RichTextEditor 工具栏菜单的视觉隐藏标签，用于将当前块转换为段落、标题、列表或引用。"
+  },
+  "@astryx.richTextEditor.toolbar.formatDivider": {
+    "defaultMessage": "块级和行内格式",
+    "description": "富文本编辑器工具栏中，块格式菜单与加粗/斜体等按钮之间分隔线的屏幕阅读器名称。"
+  },
+  "@astryx.richTextEditor.toolbar.paragraph": {
+    "defaultMessage": "段落",
+    "description": "块格式菜单选项：纯正文文本。"
+  },
+  "@astryx.richTextEditor.toolbar.heading1": {
+    "defaultMessage": "标题 1",
+    "description": "块格式菜单选项：顶级标题。"
+  },
+  "@astryx.richTextEditor.toolbar.heading2": {
+    "defaultMessage": "## 标题 2",
+    "description": "块格式菜单选项：二级标题。"
+  },
+  "@astryx.richTextEditor.toolbar.heading3": {
+    "defaultMessage": "### 标题 3",
+    "description": "块格式菜单选项：三级标题。"
+  },
+  "@astryx.richTextEditor.toolbar.bulletedList": {
+    "defaultMessage": "项目符号列表",
+    "description": "块格式菜单选项：列表项以项目符号标记开头的列表。"
+  },
+  "@astryx.richTextEditor.toolbar.numberedList": {
+    "defaultMessage": "编号列表",
+    "description": "块格式菜单选项：条目带编号的列表。"
+  },
+  "@astryx.richTextEditor.toolbar.blockQuote": {
+    "defaultMessage": "引用块",
+    "description": "块格式菜单选项：缩进引用块。"
+  },
+  "@astryx.richTextEditor.toolbar.bold": {
+    "defaultMessage": "粗体",
+    "description": "工具栏切换按钮的标签，用于将选中文本加粗。"
+  },
+  "@astryx.richTextEditor.toolbar.italic": {
+    "defaultMessage": "斜体",
+    "description": "工具栏切换按钮的标签，用于将选中文本设为斜体。"
+  },
+  "@astryx.richTextEditor.toolbar.underline": {
+    "defaultMessage": "下划线",
+    "description": "下划线选中文本的工具栏切换按钮的标签。"
+  },
+  "@astryx.richTextEditor.toolbar.strikethrough": {
+    "defaultMessage": "删除线",
+    "description": "工具栏切换按钮的标签，用于给选中文本添加删除线。"
+  },
+  "@astryx.richTextEditor.toolbar.inlineCode": {
+    "defaultMessage": "行内代码",
+    "description": "将选中文本格式化为句内源代码的工具栏开关标签。"
+  },
+  "@astryx.richTextEditor.toolbar.link": {
+    "defaultMessage": "链接",
+    "description": "用于打开对话框以在选中文本上添加或编辑链接的工具栏切换按钮标签。"
+  },
+  "@astryx.richTextEditor.link.insertTitle": {
+    "defaultMessage": "插入链接",
+    "description": "用于添加新链接的 RichTextEditor 对话框标题。"
+  },
+  "@astryx.richTextEditor.link.editTitle": {
+    "defaultMessage": "编辑链接",
+    "description": "用于更改或移除现有链接的 RichTextEditor 对话框标题。"
+  },
+  "@astryx.richTextEditor.link.url": {
+    "defaultMessage": "URL",
+    "description": "RichTextEditor 链接对话框中网址字段的标签。"
+  },
+  "@astryx.richTextEditor.link.invalidUrl": {
+    "defaultMessage": "请输入有效的 http、https、mailto 或 tel URL。",
+    "description": "链接对话框地址字段下方显示错误，提示输入的地址不被允许。scheme 名称 http、https、mailto 和 tel 保持不翻译。"
+  },
+  "@astryx.richTextEditor.link.remove": {
+    "defaultMessage": "移除链接",
+    "description": "RichTextEditor 链接对话框中用于移除所选文本的链接并保留文本的按钮。"
+  },
+  "@astryx.richTextEditor.link.cancel": {
+    "defaultMessage": "取消",
+    "description": "关闭 RichTextEditor 链接对话框且不做任何更改的按钮。"
+  },
+  "@astryx.richTextEditor.link.add": {
+    "defaultMessage": "添加链接",
+    "description": "RichTextEditor 链接对话框在添加新链接时的提交按钮。"
+  },
+  "@astryx.richTextEditor.link.update": {
+    "defaultMessage": "更新链接",
+    "description": "RichTextEditor 链接对话框在修改现有链接地址时的提交按钮。"
+  },
+  "@astryx.markdown.taskList": {
+    "defaultMessage": "任务列表",
+    "description": "GitHub 风格 Markdown 任务列表（由 `- [ ] item` / `- [x] done` 语法渲染）的屏幕阅读器专用无障碍名称。"
+  },
+  "@astryx.markdown.table": {
+    "defaultMessage": "表格",
+    "description": "Markdown 块内渲染的表格的屏幕阅读器专用可访问名称。名词（“表格”），非动词。与 `@astryx.table.label` 分开——译文可能不同。"
+  },
+  "@astryx.mobileNav.closeNavigation": {
+    "defaultMessage": "关闭导航",
+    "description": "仅供屏幕阅读器读取的标签，用于关闭 MobileNav 覆盖层的 X/关闭按钮。与 `mobileNav.toggle.open` 配对使用。"
+  },
+  "@astryx.multiSelector.selectAll": {
+    "defaultMessage": "全选",
+    "description": "多选选择器下拉框顶部复选框/开关的标签，用于选中所有选项。“All”在此处是限定词（如“all the options”），不是代词。"
+  },
+  "@astryx.multiSelector.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "多选选择器下拉面板顶部搜索输入框中的占位符。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.multiSelector.searchOptions": {
+    "defaultMessage": "搜索选项",
+    "description": "MultiSelector 内同一搜索输入框的仅供屏幕阅读器访问的名称。"
+  },
+  "@astryx.multiSelector.empty": {
+    "defaultMessage": "无选项",
+    "description": "当 MultiSelector 完全没有选项时，在其下拉面板中显示，并在打开时于礼貌性实时区域中播报。非常简短（2 个词）；语气中性，不带错误感。"
+  },
+  "@astryx.multiSelector.selectAllPartiallySelected": {
+    "defaultMessage": "{label}，部分选中",
+    "description": "MultiSelector 全选选项的无障碍名称，用于仅选中部分选项时。`{label}` 是可见的全选标签（例如 \"Select all\"）。ARIA 禁止在选项上使用 aria-selected=\"mixed\"，因此不确定状态通过名称传达。\"Partially\" 表示部分而非全部。"
+  },
+  "@astryx.popover.close": {
+    "defaultMessage": "关闭弹出框",
+    "description": "“关闭”意为 shut/dismiss，不是“附近”。Popover 内关闭按钮上仅供屏幕阅读器读取的标签。"
+  },
+  "@astryx.selector.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "选择器下拉面板顶部搜索输入框内的占位符（用于筛选选项）。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.selector.searchOptions": {
+    "defaultMessage": "搜索选项",
+    "description": "“选项” = 下拉列表中的选项列表。Selector 内搜索输入框的仅屏幕阅读器可访问名称。"
+  },
+  "@astryx.selector.empty": {
+    "defaultMessage": "无选项",
+    "description": "当 Selector 完全没有选项时，在其下拉面板中显示，并在打开时通过礼貌的实时区域播报。非常简短（2 个词）；语气中性，不带错误感。"
+  },
+  "@astryx.sideNav.label": {
+    "defaultMessage": "侧边导航",
+    "description": "仅屏幕阅读器可访问的名称，用于主垂直侧边栏导航（通常在左侧）。"
+  },
+  "@astryx.sideNav.resizeSidebar": {
+    "defaultMessage": "调整侧边栏大小",
+    "description": "SideNav 右边缘垂直拖拽手柄上的屏幕阅读器专用标签，用于调整侧边栏宽度。"
+  },
+  "@astryx.sideNav.heading.openMenu": {
+    "defaultMessage": "{heading}，打开菜单",
+    "description": "SideNavHeading 中折叠菜单按钮的无障碍名称。`{heading}` 是可见的产品或工作区名称，必须原样保留。"
+  },
+  "@astryx.slider.minimumThumb": {
+    "defaultMessage": "最小值",
+    "description": "范围滑块（双滑块）下方滑块的无障碍名称，与滑块自身标签一同播报，例如“价格范围，最小值，20”。从不在屏幕上显示。"
+  },
+  "@astryx.slider.maximumThumb": {
+    "defaultMessage": "最大值",
+    "description": "范围 Slider（双滑块）上方滑块的辅助名称，与 Slider 自身的标签一起播报，例如“价格范围，最大值，80”。从不在屏幕上显示。"
+  },
+  "@astryx.tabBar.badgedItem": {
+    "defaultMessage": "{label}，{badge}",
+    "description": "底部标签栏项的屏幕阅读器名称，显示徽标（“Library, 3”）。{label} 是标签的可见名称；{badge} 是徽标的计数或其自身标签（“3 unread”）。译者可调整两者顺序或更改分隔符。"
+  },
+  "@astryx.tabList.label": {
+    "defaultMessage": "标签页",
+    "description": "仅供屏幕阅读器使用的水平标签栏回退名称。复数名词；此处“Tabs”指 UI 标签面板，而非浏览器标签页或 Tab 键。"
+  },
+  "@astryx.table.label": {
+    "defaultMessage": "表格",
+    "description": "当使用方未提供时，数据表格区域回退用的仅屏幕阅读器可访问名称。名词（“a table”），非动词“to table”。"
+  },
+  "@astryx.table.noData": {
+    "defaultMessage": "无数据",
+    "description": "表格无数据行时，表体显示的回退空状态文本。语气中性（不带错误意味）；使用方通常会用更具体的内容覆盖，如“无结果”。"
+  },
+  "@astryx.table.columnResize.resizeColumn": {
+    "defaultMessage": "调整列宽 {label}",
+    "description": "Table 列宽调整手柄（表头单元格之间的垂直分隔条）的无障碍名称。`label` 为列头的可见文本；列头无文本时，取列键。"
+  },
+  "@astryx.table.filter.allPlaceholder": {
+    "defaultMessage": "全部",
+    "description": "未选择任何内容时，按列筛选下拉框中的占位符，含义为“无筛选——所有行均匹配”。使用限定词形式（如“所有值”），而非代词。"
+  },
+  "@astryx.table.filter.reset": {
+    "defaultMessage": "重置",
+    "description": "表格筛选面板/弹出框内的按钮标签；将待应用的筛选值清空并恢复默认值。祈使动词。"
+  },
+  "@astryx.table.filter.apply": {
+    "defaultMessage": "应用",
+    "description": "表格筛选面板/弹出框内的主按钮标签；提交待应用的筛选值。祈使动词；与 `Reset` 配对使用。"
+  },
+  "@astryx.table.rowStatus.columnHeader": {
+    "defaultMessage": "行状态",
+    "description": "供屏幕阅读器专用的列标题，用于 Table 通过 useTableRowStatus 获得的窄状态指示槽。视力正常的用户看到的是空白槽；辅助技术会将其播报为列名。"
+  },
+  "@astryx.table.selection.bulkActionsLabel": {
+    "defaultMessage": "批量操作",
+    "description": "表格行被选中时显示的上下文工具栏的无障碍名称。"
+  },
+  "@astryx.table.selection.clearAll": {
+    "defaultMessage": "取消全选",
+    "description": "清除完整受控 Table 行选择的可见按钮标签，包括当前视图之外的键。"
+  },
+  "@astryx.table.selection.selectedCount": {
+    "defaultMessage": "已选择 {count, number} 项",
+    "description": "TableSelectionToolbar 中显示已选行数的可见状态。"
+  },
+  "@astryx.table.selection.selectAllRows": {
+    "defaultMessage": "全选所有行",
+    "description": "Table 表头中“全选行”复选框的 aria 标签。"
+  },
+  "@astryx.table.selection.selectRow": {
+    "defaultMessage": "选择行",
+    "description": "Table 行上“选择行”复选框的 aria 标签。"
+  },
+  "@astryx.table.selection.selectRowNamed": {
+    "defaultMessage": "选择 {label}",
+    "description": "当存在逐行标签（通过 getRowLabel）时，Table 行选择复选框的 aria 标签。`label` 是该行的可读标识，例如 \"Alice\"。"
+  },
+  "@astryx.table.sort.ascending": {
+    "defaultMessage": "升序排序",
+    "description": "仅屏幕阅读器可见的标签，位于列标题按钮上，用于按升序对该列排序。与 `sort.descending` 和 `sort.clear` 同属一组，保持措辞一致。"
+  },
+  "@astryx.table.sort.descending": {
+    "defaultMessage": "降序排序",
+    "description": "仅屏幕阅读器可见的标签，位于列标题按钮上，用于按降序对该列排序。与 `sort.ascending` 和 `sort.clear` 同属一组。"
+  },
+  "@astryx.table.sort.clear": {
+    "defaultMessage": "清除排序",
+    "description": "仅屏幕阅读器可见的列标题按钮标签，用于移除当前排序。此处的“Clear”意为移除，而非透明。属于排序集合的一部分。"
+  },
+  "@astryx.table.sort.priority": {
+    "defaultMessage": "优先级 {rank, number}，共 {total, number}",
+    "description": "可排序表格列标题按钮的屏幕阅读器描述，用于多列排序时：本列在排序顺序中的位置。按钮名称为列标题文本，排序方向由 aria-sort 播报。"
+  },
+  "@astryx.toast.dismiss": {
+    "defaultMessage": "关闭通知",
+    "description": "Toast（临时通知弹窗）X 按钮上仅供屏幕阅读器读取的标签。与 `banner.dismiss`（常驻横幅）不同。"
+  },
+  "@astryx.toast.viewport": {
+    "defaultMessage": "通知",
+    "description": "用于承载 Toast 弹窗堆栈的不可见地标区域的屏幕阅读器专用可访问名称（通常固定在屏幕角落）。"
+  },
+  "@astryx.tokenizer.clearAll": {
+    "defaultMessage": "清除全部",
+    "description": "“×”按钮上的标签，用于清除 Tokenizer 输入中的所有 token/chip。祈使动词 + 限定词“all”；简短。"
+  },
+  "@astryx.topNav.heading.openMenu": {
+    "defaultMessage": "{hasHeading, select, true {{heading}, } other {}}打开菜单",
+    "description": "TopNavHeading 中折叠菜单按钮的无障碍名称。当 `hasHeading` 为 `true` 时，原样包含可见的产品或工作区名称 `{heading}`；否则使用不带分隔符的通用菜单操作。"
+  },
+  "@astryx.topNav.landmarkLabel": {
+    "defaultMessage": "顶部导航",
+    "description": "TopNav 渲染的 `<nav>` 地标在未提供标签时的默认无障碍名称（aria-label）。"
+  },
+  "@astryx.treeList.toggleChildren": {
+    "defaultMessage": "切换子项",
+    "description": "“Children”指树中的子节点，不是人类的孩子。这是 TreeList 项旁箭头上的屏幕阅读器专用标签，该项有子节点，箭头用于切换子列表。"
+  },
+  "@astryx.typeahead.emptySearchResults": {
+    "defaultMessage": "未找到结果",
+    "description": "Typeahead 建议弹窗中当前查询无匹配项时显示的空状态回退消息。语气中性（不带错误感）。"
+  },
+  "@astryx.typeahead.loading": {
+    "defaultMessage": "加载中",
+    "description": "仅供屏幕阅读器使用的名称，用于 Typeahead、Tokenizer 或直接使用的 BaseTypeahead 在获取建议时显示的加载指示器；每次搜索开始时也会通过共享播报通道播报一次。使用现在进行时形式。"
+  },
+  "@astryx.typeahead.searchResults": {
+    "defaultMessage": "搜索结果",
+    "description": "Typeahead 下拉框内建议列表的屏幕阅读器专用可访问名称。"
+  },
+  "@astryx.typeahead.clearSelection": {
+    "defaultMessage": "清除选择",
+    "description": "“Selection” = 选中的值（不是高亮文本）。Typeahead 中清除当前选中值的 X 上的屏幕阅读器专用标签。"
+  },
+  "@astryx.breadcrumbs.label": {
+    "defaultMessage": "面包屑导航",
+    "description": "仅屏幕阅读器可见的面包屑导航回退名称（例如 `Home > Section > Page`）。按 ARIA 惯例，英文用单数；若你的语言环境中复数更自然，也可用复数。"
+  },
+  "@astryx.chat.composer.placeholder": {
+    "defaultMessage": "输入消息…",
+    "description": "空聊天输入框 textarea 内的灰色占位文本。祈使动词；末尾 `…` 为一个字符。"
+  },
+  "@astryx.chat.composerDrawer.label": {
+    "defaultMessage": "项目",
+    "description": "ChatComposerDrawer 的备用 aria 标签——一个横向的附件/工具标签列表。使用者通常会用“Attachments”、“Tools”等覆盖。"
+  },
+  "@astryx.chat.composerInput.label": {
+    "defaultMessage": "消息输入",
+    "description": "聊天输入框的屏幕阅读器专用无障碍名称。如果你的语言中“消息字段”用一个词表达，可自由调整语序。"
+  },
+  "@astryx.chat.speechRecognition.noSpeechDetected": {
+    "defaultMessage": "未检测到语音。",
+    "description": "语音输入未捕获到声音后，在聊天输入框中内联显示的完整句子错误提示。采用软错误语气（不引起警觉）；保留句末句号。"
+  },
+  "@astryx.commandPalette.label": {
+    "defaultMessage": "命令面板",
+    "description": "仅屏幕阅读器可见的回退名称，用于键盘驱动的命令菜单（通常用 Cmd/Ctrl-K 打开）。若不熟悉，优先使用\"快速操作\"之类的自然对应说法。"
+  },
+  "@astryx.commandPalette.input.placeholder": {
+    "defaultMessage": "搜索…",
+    "description": "CommandPalette 搜索输入框内的灰色占位符。祈使动词；末尾的 `…` 是一个字符。"
+  },
+  "@astryx.commandPalette.input.label": {
+    "defaultMessage": "搜索命令",
+    "description": "CommandPalette 查询输入框的屏幕阅读器专用可访问名称。需与可见占位符区分；格式为动词后接所搜索的应用操作。"
+  },
+  "@astryx.commandPalette.list.label": {
+    "defaultMessage": "命令",
+    "description": "“命令” = 用户可以调用的应用操作（借自 CLI 的比喻），不是 Unix 命令。供屏幕阅读器使用的匹配命令列表名称。"
+  },
+  "@astryx.contextMenu.label": {
+    "defaultMessage": "上下文菜单",
+    "description": "仅屏幕阅读器可见的右键/长按弹出菜单回退名称。“Context”指针对被激活元素的上下文，而非语言语境。"
+  },
+  "@astryx.dateInput.placeholder": {
+    "defaultMessage": "选择日期",
+    "description": "空 DateInput 字段内的灰色占位符。“Date”指日历日期，与浪漫或水果无关。祈使动词。"
+  },
+  "@astryx.dateInput.dialogLabel": {
+    "defaultMessage": "选择日期",
+    "description": "DateInput 日历切换按钮打开的弹出框对话框的屏幕阅读器专用可访问名称。祈使动词 + 名词。"
+  },
+  "@astryx.dateInput.closeCalendar": {
+    "defaultMessage": "关闭日历",
+    "description": "DateInput 日历弹出层内 X 按钮的屏幕阅读器专用标签（用于关闭弹出层）。与 `dateInput.toggleCalendarClose` 不同，后者标注的是外层切换按钮。"
+  },
+  "@astryx.dateInput.openCalendar": {
+    "defaultMessage": "打开日历",
+    "description": "DateInput / DateRangeInput / DateTimeInput 日历切换按钮在弹出框关闭时的 aria 标签。"
+  },
+  "@astryx.dateInput.toggleCalendarClose": {
+    "defaultMessage": "关闭日历",
+    "description": "DateInput / DateRangeInput / DateTimeInput 日历切换按钮在弹出层打开时的 aria 标签。与 closeCalendar（用于标注弹出层内 X 按钮）区分开，便于译者区分切换按钮与关闭 X 的 UI。"
+  },
+  "@astryx.dateInput.clear": {
+    "defaultMessage": "清除 {label}",
+    "description": "DateInput / DateRangeInput / DateTimeInput 中清除值按钮的 Aria 标签。`{label}` 是该字段自身的标签，因此屏幕阅读器会播报例如“Clear Start date”。"
+  },
+  "@astryx.dateInput.invalidDate": {
+    "defaultMessage": "无效日期",
+    "description": "仅屏幕阅读器可见的实时区域提示，用于 DateInput / DateTimeInput 中输入的文本无法解析为日期时。字段无法补全的文本（如一位数年份）会在按 Enter 或失焦时保留，并作为字段状态显示此消息。"
+  },
+  "@astryx.dateInput.nonexistentDate": {
+    "defaultMessage": "该日期在 {calendar} 中不存在",
+    "description": "DateInput / DateTimeInput 中的错误，显示在字段下方并会被朗读，当输入的日期可读但日历中不存在时触发，例如平年波斯历的 30 Esfand 或 2 月 30 日。{calendar} 是平台提供的日历本地化名称，例如 \"Persian Calendar\" 或 \"Gregorian Calendar\"。"
+  },
+  "@astryx.dateInput.outOfRangeDate": {
+    "defaultMessage": "{bounds, select, both {输入 {min} 至 {max} 之间的日期} min {输入 {min} 或之后的日期} max {输入 {max} 或之前的日期} other {此日期不可用}}",
+    "description": "DateInput / DateTimeInput 的错误，显示在字段下方并会被朗读，当输入的日期超出允许范围时触发。{min} 和 {max} 是边界值，以字段所在日历的日期格式书写。`bounds` 取值为 `both`、`min` 或 `max`，表示日期超出对应边界；取值为 `other` 表示日期被自定义规则拒绝。"
+  },
+  "@astryx.dateInput.formatHint": {
+    "defaultMessage": "例如，{example}",
+    "description": "用于 DateInput / DateTimeInput 日期字段的占位提示，适用于使用非公历日历的字段，在字段获得焦点且为空时显示。{example} 是今天的日期，或该字段接受的最接近日期，按该日历的数字格式书写，例如 ۱۴۰۵/۸/۱۱。"
+  },
+  "@astryx.dateInput.calendarDescription": {
+    "defaultMessage": "日期使用 {calendar}",
+    "description": "仅供屏幕阅读器使用的描述，用于说明 DateInput / DateTimeInput 日期字段的日历与应用日历不同，例如公历应用中的波斯历字段，或波斯历应用中的公历字段。{calendar} 是平台提供的日历本地化名称，例如“波斯历”或“公历”。"
+  },
+  "@astryx.dateInput.resetPicking": {
+    "defaultMessage": "重置",
+    "description": "移动端日期选择器标题栏中的幽灵按钮，位于月份箭头旁的尾部角落。它会清除已选日期，并将日历返回当前月份——撤销目前所做的选择，把选择器恢复到打开时的状态，因此请选用能同时涵盖这两层含义的词，而非仅表示清空字段的词。不要用“取消”：点击后选择器仍保持打开，不会关闭任何内容。保持简短；它与月份标题和两个箭头共用一行。"
+  },
+  "@astryx.dateInput.savePicking": {
+    "defaultMessage": "保存",
+    "description": "日历上用于关闭移动端日期选择器的全宽主按钮。点击选择日期时日期已提交，因此此按钮只负责关闭——但文案写成“保存”，因为对填完表单的人来说，这个操作读起来就是保存。请使用你所在平台用于确认并关闭面板的措辞。"
+  },
+  "@astryx.dateInput.doneChoosingMonth": {
+    "defaultMessage": "完成",
+    "description": "移动端日期选择器中，月和年滚轮下方的全宽按钮。它不会关闭选择器——而是设置月份后返回日历。措辞应体现完成此步骤，而非完成整个任务；关闭选择器的是日历自身的按钮。"
+  },
+  "@astryx.dateInput.chooseMonthYear": {
+    "defaultMessage": "{monthYear}，选择月份和年份",
+    "description": "移动端日期选择器头部按钮的无障碍名称，该按钮用于将日历切换为月和年滚轮。{monthYear} 是当前显示的月份和年份，已完成本地化（例如 \"March 2026\"）。整个标签是一个字符串，因此分隔符和词序可随区域设置变化。"
+  },
+  "@astryx.dateInput.monthWheel": {
+    "defaultMessage": "月",
+    "description": "移动端日期选择器中可滚动月份列的无障碍名称。单个词；指日历月份，而非时长。"
+  },
+  "@astryx.dateInput.yearWheel": {
+    "defaultMessage": "年份",
+    "description": "移动端日期选择器中可滚动年份列的无障碍名称。单个词；表示日历年，而非时长。"
+  },
+  "@astryx.dateTimeInput.timeHint12h": {
+    "defaultMessage": "例如，下午2:30",
+    "description": "当 TimeInput 和 DateTimeInput 的时间字段获得焦点且为空、并使用 12 小时制时显示的占位提示。给出预期输入格式的示例；请按你所在区域设置中 12 小时制的写法书写示例时间。"
+  },
+  "@astryx.dateTimeInput.timeHint24h": {
+    "defaultMessage": "例如，14:30",
+    "description": "当 TimeInput 和 DateTimeInput 的时间字段获得焦点且为空、并使用 24 小时制时显示的占位提示。给出预期输入格式的示例；请按你的语言环境书写 24 小时制时间的方式编写示例时间。"
+  },
+  "@astryx.dateTimeInput.timeSuffix": {
+    "defaultMessage": "{label} 时间",
+    "description": "DateTimeInput 中时段槽位的屏幕阅读器专用可访问名称。示例：`Start date time`；可自由调整顺序（例如 \"time of {label}\"）。"
+  },
+  "@astryx.dateTimeInput.timeOptionsLabel": {
+    "defaultMessage": "{label} 选项",
+    "description": "DateTimeInput 时间槽下拉的预设时间列表的屏幕阅读器专用可访问名称。`{label}` 是时间字段本身的可访问名称，已以表示时间的词结尾——例如：`Meeting time options`。复数：该列表包含所有可选时间。"
+  },
+  "@astryx.dateRangeInput.placeholder": {
+    "defaultMessage": "选择日期范围",
+    "description": "空 DateRangeInput 字段内的灰色占位符。表示选择一对开始–结束日期。祈使动词。"
+  },
+  "@astryx.dateRangeInput.dialogLabel": {
+    "defaultMessage": "选择日期范围",
+    "description": "DateRangeInput 打开的弹出框对话框的屏幕阅读器专用可访问名称。祈使动词 + 名词短语。"
+  },
+  "@astryx.dateTimeInput.placeholder": {
+    "defaultMessage": "选择日期",
+    "description": "空 DateTimeInput 字段内的灰色占位符。注意：英文只写了“date”，但该字段是日期+时间——除非更自然，否则不要加“and time”。"
+  },
+  "@astryx.dateTimeInput.dialogLabel": {
+    "defaultMessage": "选择日期和时间",
+    "description": "DateTimeInput 选择器对话框的屏幕阅读器专用可访问名称。在桌面端，它为日期+时间字段内的日期日历弹出层提供标签；在触屏设备上，它为完整的日期/时间底部弹层提供标签。"
+  },
+  "@astryx.dateTimeInput.pickerMode": {
+    "defaultMessage": "日期/时间部分",
+    "description": "移动端 DateTimeInput 底部面板顶部的日期/时间分段切换开关的屏幕阅读器专用标签。"
+  },
+  "@astryx.dateTimeInput.dateTab": {
+    "defaultMessage": "日期",
+    "description": "移动端 DateTimeInput 底部面板中 Date 分段的可见标签。"
+  },
+  "@astryx.dateTimeInput.timeTab": {
+    "defaultMessage": "时间",
+    "description": "移动端 DateTimeInput 底部面板中时间段的可见标签。"
+  },
+  "@astryx.dateTimeInput.openTimePicker": {
+    "defaultMessage": "打开 {label}",
+    "description": "移动端 DateTimeInput 关闭时间段的时钟按钮的 aria 标签。`{label}` 是时间输入的可访问名称，例如 `Meeting time`。"
+  },
+  "@astryx.dateTimeInput.saveDatePicking": {
+    "defaultMessage": "保存日期",
+    "description": "移动端 DateTimeInput 底部面板中，Date 面板底部的主按钮。它不关闭面板，而是确认日期步骤并进入 Time 面板。英文使用句子式大写，仅在适合该区域设置时使用标题式大写。"
+  },
+  "@astryx.dateTimeInput.hourWheel": {
+    "defaultMessage": "小时",
+    "description": "移动端 DateTimeInput 底部弹层中小时滚轮的无障碍名称。"
+  },
+  "@astryx.dateTimeInput.minuteWheel": {
+    "defaultMessage": "分钟",
+    "description": "移动端 DateTimeInput 底部弹层中分钟滚轮的无障碍名称。"
+  },
+  "@astryx.dateTimeInput.secondWheel": {
+    "defaultMessage": "第二",
+    "description": "移动端 DateTimeInput 底部弹层中可选秒轮的无障碍名称。"
+  },
+  "@astryx.dateTimeInput.meridiemWheel": {
+    "defaultMessage": "上午/下午",
+    "description": "移动端 DateTimeInput 底部面板中，使用 12 小时制时 AM/PM 滚轮的无障碍名称。"
+  },
+  "@astryx.dateTimeInput.meridiemAM": {
+    "defaultMessage": "上午",
+    "description": "移动端 DateTimeInput 底部弹层中 AM/PM 滚轮的上午半部分标签。使用该区域设置的简明午前标记。"
+  },
+  "@astryx.dateTimeInput.meridiemPM": {
+    "defaultMessage": "PM",
+    "description": "移动端 DateTimeInput 底部弹窗中 AM/PM 滚轮的下午/晚间半区标签。使用该区域设置的简洁午后标记。"
+  },
+  "@astryx.link.newTab": {
+    "defaultMessage": "（在新标签页中打开）",
+    "description": "当 Link 在新标签页打开时，追加到其无障碍名称后的视觉隐藏（仅屏幕阅读器可见）后缀。示例：`Documentation (opens in new tab)`。"
+  },
+  "@astryx.mobileNav.toggle.open": {
+    "defaultMessage": "打开导航",
+    "description": "仅屏幕阅读器可见的标签，位于打开 MobileNav 覆盖层的汉堡按钮上（覆盖层关闭时渲染）。与 `mobileNav.closeNavigation` 配对使用。"
+  },
+  "@astryx.moreMenu.label": {
+    "defaultMessage": "更多选项",
+    "description": "仅屏幕阅读器可见的名称，用于打开更多操作菜单的小型 `⋯`（三点）溢出按钮。非常短——位于一个很小的图标按钮上。"
+  },
+  "@astryx.multiSelector.selectPlaceholder": {
+    "defaultMessage": "选择…",
+    "description": "空 MultiSelector 触发按钮上的占位符。与 `selector.placeholder` 的英文相同，但为独立键——使用\"Choose items…\"这类复数措辞即可。"
+  },
+  "@astryx.outline.label": {
+    "defaultMessage": "目录",
+    "description": "页面大纲 / 目录侧边栏（页内标题列表）的屏幕阅读器专用回退名称。作为 `aria-label` 渲染在 `<nav>` 地标上。"
+  },
+  "@astryx.powersearch.label": {
+    "defaultMessage": "搜索",
+    "description": "PowerSearch 输入框（筛选构建器）的仅屏幕阅读器可访问名称。可见占位符是独立的；名词形式通常比动词形式读起来更顺。"
+  },
+  "@astryx.powersearch.placeholder": {
+    "defaultMessage": "搜索…",
+    "description": "PowerSearch 空输入框内的灰色占位文本。祈使动词；末尾 `…` 为一个字符。"
+  },
+  "@astryx.powersearch.allFiltersRemoved": {
+    "defaultMessage": "已移除所有筛选条件",
+    "description": "屏幕阅读器在 PowerSearch 字段的“全部清除”移除所有筛选条件后播报。与 @astryx.tokenizer.allRemoved 不同：PowerSearch 将其条目称为筛选条件。"
+  },
+  "@astryx.powersearch.editableFiltersRemoved": {
+    "defaultMessage": "可编辑筛选器已移除",
+    "description": "屏幕阅读器在 PowerSearch 字段的“全部清除”移除用户可编辑的筛选器并保留其只读筛选器后播报。当仍有只读筛选器保留时，使用此播报替代 @astryx.powersearch.allFiltersRemoved。"
+  },
+  "@astryx.resizable.collapsed": {
+    "defaultMessage": "已折叠",
+    "description": "可调整大小拖拽手柄（role=separator）在其面板折叠至零尺寸时的 aria-valuetext。用于替代数值播报，因为折叠时数值会被钳制到最小值。用形容词描述面板状态，而非动词/命令。"
+  },
+  "@astryx.resizable.handle.label": {
+    "defaultMessage": "调整大小手柄",
+    "description": "两个可调整大小的面板之间小型可拖动分隔条的无障碍名称，仅供屏幕阅读器使用（用户拖动它来改变分割比例）。"
+  },
+  "@astryx.selector.placeholder": {
+    "defaultMessage": "选择…",
+    "description": "空 Selector 触发按钮（下拉框）上的占位文本。祈使动词；末尾 `…` 为一个字符。非常短——显示在按钮表面。"
+  },
+  "@astryx.sideNav.heading.dialogLabel": {
+    "defaultMessage": "导航菜单",
+    "description": "SideNavHeading 溢出菜单打开的下列对话框的屏幕阅读器专用可访问名称。"
+  },
+  "@astryx.table.pagination.label": {
+    "defaultMessage": "表格分页",
+    "description": "表格分页 `<nav>` 的仅屏幕阅读器可访问名称（根据插件的 position 配置渲染在表格下方和/或上方）。与 `@astryx.pagination.label` 分开，以便翻译可以不同。当 position='both' 时，此字符串作为 {label} 值插入到 `@astryx.table.pagination.labelAbove`/`labelBelow` 中——请保持与这些后缀模板兼容。"
+  },
+  "@astryx.table.pagination.labelAbove": {
+    "defaultMessage": "{label}（顶部）",
+    "description": "当 position='both' 渲染两个导航时，表格上方分页 `<nav>` 的无障碍名称。`label` 是解析后的基础标签（默认 \"Table pagination\" 或由使用者提供）；后缀用于区分两个同类型地标。"
+  },
+  "@astryx.table.pagination.labelBelow": {
+    "defaultMessage": "{label}（底部）",
+    "description": "当 position='both' 渲染两个导航时，表格下方分页 `<nav>` 的无障碍名称。`label` 是解析后的基础标签（默认 \"Table pagination\" 或使用者提供）；后缀用于区分两个同类型地标。"
+  },
+  "@astryx.timeInput.placeholder": {
+    "defaultMessage": "选择时间",
+    "description": "\"Time\" = 时钟时间（HH:MM），不是时长或时代。空的 TimeInput 字段内的灰色占位符；祈使动词。"
+  },
+  "@astryx.timeInput.invalidTime": {
+    "defaultMessage": "无效时间",
+    "description": "TimeInput / DateTimeInput 中供屏幕阅读器专用的实时区域提示，在输入的时间无法解析时触发。\"Time\" 指时钟时间（HH:MM）。该字段在失焦时会静默还原，因此这是屏幕阅读器用户唯一能获得的拒绝反馈。"
+  },
+  "@astryx.timeInput.openPicker": {
+    "defaultMessage": "打开 {label}",
+    "description": "用于打开 TimeInput 浏览器/操作系统时间选择器的时钟按钮的 aria 标签。`{label}` 是字段标签，例如 `Start time`。"
+  },
+  "@astryx.topNav.heading.dialogLabel": {
+    "defaultMessage": "导航菜单",
+    "description": "TopNavHeading 溢出菜单打开的下拉对话框的屏幕阅读器专用可访问名称。与 SideNav 同级项分开维护。"
+  },
+  "@astryx.typeahead.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "空 Typeahead 输入框（随用户输入提示结果的搜索框）中的占位符。祈使动词；末尾的 `…` 为一个字符。"
+  },
+  "@astryx.banner.collapse": {
+    "defaultMessage": "折叠",
+    "description": "“Collapse”指收起，不是崩塌。Banner 展开/收起切换按钮在处于展开状态时的 aria 标签和工具提示。与 `banner.expand` 配对使用。"
+  },
+  "@astryx.banner.expand": {
+    "defaultMessage": "展开",
+    "description": "\"展开\" = 显示更多内容，而非物理上变大。当前处于折叠状态时，同一个切换控件上同时设置 aria-label 和工具提示。与 `banner.collapse` 配对使用。"
+  },
+  "@astryx.button.loading": {
+    "defaultMessage": "加载中",
+    "description": "仅屏幕阅读器可见的实时区域播报，在 Button 处于加载状态时触发（显示加载动画，操作进行中）。表达进行中的含义（“正在处理”），而非名词。与 `typeahead.loading` 分开维护——两者的翻译可能不同。"
+  },
+  "@astryx.spinner.loading": {
+    "defaultMessage": "加载中",
+    "description": "仅屏幕阅读器可见的默认名称，用于独立 Spinner 的 role=\"status\" 元素；当使用方既未提供 `aria-label` 也未提供可见文本标签时使用。忙碌的输入框或选择器开始加载时，也会播报一次，替代其装饰性 Spinner。现在进行时形式。与 `button.loading` 和 `typeahead.loading` 分开维护——各翻译可能不同。"
+  },
+  "@astryx.scrollRegion.label": {
+    "defaultMessage": "请提供需要翻译的 Markdown 内容。",
+    "description": "调用方未提供时，滚动内容区域（LayoutContent、LayoutPanel 或 StackItem）的可访问名称。区域滚动时，屏幕阅读器会以该区域的组角色播报此名称。"
+  },
+  "@astryx.chatComposerDrawer.expand": {
+    "defaultMessage": "展开 {label}",
+    "description": "仅屏幕阅读器可见的标签，用于 ChatComposerDrawer 折叠状态下的切换按钮。`{label}` 是抽屉的可见名称——例如：`Expand Attachments`。与 `collapse` 配对使用。"
+  },
+  "@astryx.chatComposerDrawer.collapse": {
+    "defaultMessage": "折叠 {label}",
+    "description": "仅屏幕阅读器可见的标签，用于 ChatComposerDrawer 抽屉展开时的切换按钮。示例：`Collapse Attachments`。与 `expand` 配对使用。"
+  },
+  "@astryx.chatDictationButton.startDictation": {
+    "defaultMessage": "开始听写",
+    "description": "麦克风按钮在空闲（未监听）状态下的无障碍标签。"
+  },
+  "@astryx.chatDictationButton.stopDictation": {
+    "defaultMessage": "停止听写",
+    "description": "麦克风按钮在主动监听时的无障碍标签。"
+  },
+  "@astryx.chatLayout.newMessages": {
+    "defaultMessage": "新消息",
+    "description": "聊天视口底部悬浮胶囊上的文字，当视口下方有新消息到达时显示；点击可滚动到底部。保持简短——胶囊较窄。"
+  },
+  "@astryx.chatLayoutScrollButton.scrollToBottom": {
+    "defaultMessage": "滚动到底部",
+    "description": "用于小号下箭头按钮的可见工具提示和屏幕阅读器标签，该按钮将聊天视口滚动到最新消息。"
+  },
+  "@astryx.chatMessage.messageFrom": {
+    "defaultMessage": "来自 {sender} 的消息",
+    "description": "当发送者名称不可见时，聊天消息的屏幕阅读器专用无障碍名称。示例：`Message from Sarah`、`Message from Bot` —— 可自由调整顺序。"
+  },
+  "@astryx.chatSendButton.stop": {
+    "defaultMessage": "停止",
+    "description": "聊天发送按钮在 AI 响应流式输出期间替换 `Send` 的按钮标签；点击可中止生成。要简短——显示在小按钮上。"
+  },
+  "@astryx.chatSendButton.send": {
+    "defaultMessage": "发送",
+    "description": "聊天提交按钮（纸飞机图标）上的主按钮标签。祈使动词；与 `Stop` 配对。非常简短。"
+  },
+  "@astryx.chatToolCalls.error": {
+    "defaultMessage": "错误：{message}",
+    "description": "用于屏幕阅读器的文本，描述失败的工具调用。{message} 是错误详情。"
+  },
+  "@astryx.chatToolCalls.status.pending": {
+    "defaultMessage": "待处理",
+    "description": "仅供屏幕阅读器使用的状态标签，用于等待开始的工具调用。"
+  },
+  "@astryx.chatToolCalls.status.running": {
+    "defaultMessage": "运行中",
+    "description": "仅屏幕阅读器可见的状态标签，用于当前正在运行的工具调用。"
+  },
+  "@astryx.chatToolCalls.status.complete": {
+    "defaultMessage": "完成",
+    "description": "工具调用成功完成时，仅供屏幕阅读器读取的状态标签。"
+  },
+  "@astryx.chatToolCalls.status.error": {
+    "defaultMessage": "失败",
+    "description": "仅屏幕阅读器可见的状态标签，用于未提供错误详情时工具调用失败的情况。"
+  },
+  "@astryx.chatToolCalls.groupLabel": {
+    "defaultMessage": "{count} 次工具调用",
+    "description": "分组标题中多个工具调用展开时显示的摘要标签。{count} 是调用次数。"
+  },
+  "@astryx.chatTriggerMenu.searching": {
+    "defaultMessage": "搜索中…",
+    "description": "在聊天输入框的 @ 提及或斜杠命令菜单等待异步搜索结果时显示，并向屏幕阅读器礼貌播报。现在分词；末尾的 `…` 是一个字符。"
+  },
+  "@astryx.chatTriggerMenu.suggestions": {
+    "defaultMessage": "建议",
+    "description": "聊天编辑器中由触发字符（`@`、`/`）打开的弹出列表框的屏幕阅读器专用回退标签，用于触发器未提供具体标签时。"
+  },
+  "@astryx.citation.label": {
+    "defaultMessage": "引用 {number}：{title}",
+    "description": "Citation 芯片（指向来源的小型编号链接）的仅供屏幕阅读器使用的无障碍名称。示例：`Citation 1: OpenAI research paper`。可自由调整顺序。"
+  },
+  "@astryx.codeBlock.copied": {
+    "defaultMessage": "已复制",
+    "description": "仅屏幕阅读器可见的标签，在 CodeBlock 复制按钮复制成功后显示约 2 秒。过去分词形式（“has been copied”）；与 `codeBlock.copyCode` 配对使用。"
+  },
+  "@astryx.codeBlock.copyCode": {
+    "defaultMessage": "复制代码",
+    "description": "“代码”即源代码。CodeBlock 复制按钮在默认状态下的 Aria 标签和工具提示。与 `codeBlock.copied`（点击后状态）配对使用。"
+  },
+  "@astryx.codeBlock.copyFailed": {
+    "defaultMessage": "无法将值复制到剪贴板。",
+    "description": "CodeBlock 复制按钮在剪贴板写入失败后约 2 秒内的 aria 标签、工具提示和屏幕阅读器播报。与 `codeBlock.copyCode` 和 `codeBlock.copied` 配合使用。"
+  },
+  "@astryx.codeBlock.code": {
+    "defaultMessage": "请提供需要翻译的 Markdown 内容。",
+    "description": "代码片段滚动容器的屏幕阅读器专用回退名称，用于代码语言未知时。“Code”指源代码，不是密码或行为准则。"
+  },
+  "@astryx.field.optional": {
+    "defaultMessage": "可选",
+    "description": "当字段为可选（isOptional）时，显示在表单字段标签旁的可见指示器。与必填指示器互斥。非常短——以内联方式出现在标签文本之后。"
+  },
+  "@astryx.field.labelTooltip": {
+    "defaultMessage": "关于 {label}",
+    "description": "表单字段标签后小信息按钮的屏幕阅读器名称；该按钮显示字段帮助。{label} 是字段的可见标签。示例：`About Auto-save`。"
+  },
+  "@astryx.field.required": {
+    "defaultMessage": "必填",
+    "description": "当字段必填（isRequired）时，显示在表单字段标签旁的可见指示器。与可选指示器互斥。非常短——以内联方式出现在标签文本之后。"
+  },
+  "@astryx.fileInput.clearLabel": {
+    "defaultMessage": "清除 {label}",
+    "description": "用于从 FileInput 中移除所选文件的 X 上的屏幕阅读器专用标签。示例：`Clear Attachment`、`Clear Résumé`。"
+  },
+  "@astryx.fileInput.dropHint": {
+    "defaultMessage": "将文件拖放到此处",
+    "description": "当用户将文件拖到 FileInput 上方时，拖放区域显示的文本。"
+  },
+  "@astryx.fileInput.errorInvalidType": {
+    "defaultMessage": "“{fileName}”不是可接受的文件类型",
+    "description": "所选文件与接受类型不匹配时显示校验错误。"
+  },
+  "@astryx.fileInput.errorMaxFiles": {
+    "defaultMessage": "最多允许 {maxFiles} 个文件",
+    "description": "所选文件数量超过上限时显示的校验错误。"
+  },
+  "@astryx.fileInput.errorMaxSize": {
+    "defaultMessage": "“{fileName}”超出 {maxSize} 限制",
+    "description": "所选文件超过最大大小时显示的校验错误。{maxSize} 是格式化后的大小字符串，如 \"2.0 MB\"。"
+  },
+  "@astryx.fileInput.fileSelected": {
+    "defaultMessage": "已选择 1 个文件：{fileName}",
+    "description": "所选单个文件成功选中时的实时区域播报。"
+  },
+  "@astryx.fileInput.fileSize.bytes": {
+    "defaultMessage": "{size, number, ::group-off} B",
+    "description": "FileInput 校验反馈中低于 1024 字节的文件大小限制。{size} 为字节数。请本地化单位缩写；不要添加数字分组。"
+  },
+  "@astryx.fileInput.fileSize.kilobytes": {
+    "defaultMessage": "{size, number, :: .0 group-off} KB",
+    "description": "FileInput 校验反馈中的文件大小限制，从 1024 字节到 1 MB。{size} 为字节数除以 1024，保留一位小数显示，不使用数字分组。本地化单位缩写。"
+  },
+  "@astryx.fileInput.fileSize.megabytes": {
+    "defaultMessage": "{size, number, :: .0 group-off} MB",
+    "description": "FileInput 校验反馈中至少 1 兆字节的文件大小限制。{size} 为字节数除以 1048576，保留一位小数显示，不使用数字分组。本地化单位缩写。"
+  },
+  "@astryx.fileInput.filesSelected": {
+    "defaultMessage": "已选择 {count} 个文件",
+    "description": "多个文件成功选中时的实时区域公告。"
+  },
+  "@astryx.fileInput.placeholder": {
+    "defaultMessage": "选择文件",
+    "description": "未选择文件时，单文件 FileInput 中显示的默认占位文本。"
+  },
+  "@astryx.fileInput.placeholderMultiple": {
+    "defaultMessage": "选择文件",
+    "description": "多文件 FileInput 中未选择任何文件时显示的默认占位文本。"
+  },
+  "@astryx.fileInput.required": {
+    "defaultMessage": "必填",
+    "description": "FileInput 触发器上仅供屏幕阅读器读取的描述，表明该字段必须填写。与字段标签旁可见的 `Required` 指示器对应；由于 role=\"button\" 不支持 aria-required，因此通过描述传达。"
+  },
+  "@astryx.fileInput.triggerWithFiles": {
+    "defaultMessage": "{label}，{fileNames}",
+    "description": "FileInput 触发器已附加文件时的无障碍名称，由字段标签和已选文件名组合而成。示例：`Attachments, report.pdf, notes.txt`。"
+  },
+  "@astryx.kbd.key.alt": {
+    "defaultMessage": "Alt",
+    "description": "键盘快捷键无障碍名称中 Alt 修饰键的口语化名称。"
+  },
+  "@astryx.kbd.key.backspace": {
+    "defaultMessage": "退格",
+    "description": "键盘快捷键无障碍名称中退格键的朗读名称。"
+  },
+  "@astryx.kbd.key.command": {
+    "defaultMessage": "命令",
+    "description": "Apple 平台上 Command 修饰键在键盘快捷键无障碍名称中的口语化名称。"
+  },
+  "@astryx.kbd.key.control": {
+    "defaultMessage": "控制",
+    "description": "键盘快捷键无障碍名称中 Control 修饰键的口语化名称。在非 Apple 平台上也会解析 mod 键。"
+  },
+  "@astryx.kbd.key.controlShort": {
+    "defaultMessage": "Ctrl",
+    "description": "非 Apple 平台上用于 mod 的 Control 键帽的缩写可见标签。请本地化为键盘的常规短标签。"
+  },
+  "@astryx.kbd.key.down": {
+    "defaultMessage": "向下箭头",
+    "description": "键盘快捷键无障碍名称中下方向键的口语化名称。"
+  },
+  "@astryx.kbd.key.enter": {
+    "defaultMessage": "输入",
+    "description": "键盘快捷键无障碍名称中 Enter 或 Return 键的口语化名称。"
+  },
+  "@astryx.kbd.key.escape": {
+    "defaultMessage": "转义",
+    "description": "键盘快捷键无障碍名称中 Escape 键的口语化名称，也用于 esc 别名。"
+  },
+  "@astryx.kbd.key.escapeShort": {
+    "defaultMessage": "Esc",
+    "description": "Escape 键帽的缩写可见标签。也用于 esc 别名。"
+  },
+  "@astryx.kbd.key.left": {
+    "defaultMessage": "左箭头",
+    "description": "键盘快捷键无障碍名称中左方向键的朗读名称。"
+  },
+  "@astryx.kbd.key.plus": {
+    "defaultMessage": "加号",
+    "description": "键盘快捷键无障碍名称中，字面加号键的朗读名称，区别于按键之间的分隔符。"
+  },
+  "@astryx.kbd.key.right": {
+    "defaultMessage": "右箭头",
+    "description": "键盘快捷键无障碍名称中右方向键的读音名称。"
+  },
+  "@astryx.kbd.key.shift": {
+    "defaultMessage": "Shift",
+    "description": "键盘快捷键无障碍名称中 Shift 修饰键的朗读名称。"
+  },
+  "@astryx.kbd.key.tab": {
+    "defaultMessage": "标签页",
+    "description": "键盘快捷键无障碍名称中 Tab 键的口语化名称。"
+  },
+  "@astryx.kbd.key.up": {
+    "defaultMessage": "上箭头",
+    "description": "键盘快捷键无障碍名称中上箭头键的口语化名称。"
+  },
+  "@astryx.kbd.shortcut": {
+    "defaultMessage": "{shortcut} + {key}",
+    "description": "将已读出的按键名称组合成一个键盘快捷键的无障碍名称。{shortcut} 是前面的按键，{key} 是下一个按键的本地化朗读名称。从第二个按键起，每个按键应用一次；译者可更改分隔符或顺序。"
+  },
+  "@astryx.keyboardHint.toNavigate": {
+    "defaultMessage": "导航",
+    "description": "键盘提示徽标中位于箭头图标之后的尾部文本——显示为 `← → to navigate`。小写句子片段，补全整个视觉短语；该徽标为 aria-hidden，因此仅面向视力正常的用户。"
+  },
+  "@astryx.lightbox.mediaViewer": {
+    "defaultMessage": "媒体查看器",
+    "description": "当当前媒体项没有替代文本时，Lightbox 对话框使用的仅屏幕阅读器可见的回退名称。应很少渲染——使用方应提供替代文本。"
+  },
+  "@astryx.lightbox.zoom": {
+    "defaultMessage": "缩放",
+    "description": "仅屏幕阅读器可见的标签，位于 Lightbox 图片上，作为缩放切换按钮（aria-pressed 反映缩放状态）。动词（“缩放”），非常简短。"
+  },
+  "@astryx.lightbox.zoomedIn": {
+    "defaultMessage": "放大后，使用方向键平移",
+    "description": "放大 Lightbox 图片后向屏幕阅读器播报的礼貌提示，包含放大状态下可用方向键平移的提示。与 `lightbox.zoomedOut` 配对使用。"
+  },
+  "@astryx.lightbox.zoomedOut": {
+    "defaultMessage": "缩小",
+    "description": "从 Lightbox 图片缩小回原尺寸后，向屏幕阅读器播报的礼貌提示。与 `lightbox.zoomedIn` 配对使用。"
+  },
+  "@astryx.metadataList.showMore": {
+    "defaultMessage": "显示更多",
+    "description": "MetadataList 下方的按钮标签，用于显示超出配置上限而被隐藏的条目。与 `metadataList.showLess` 成对切换——在你的语言中保持这对标签的对称。"
+  },
+  "@astryx.metadataList.showLess": {
+    "defaultMessage": "显示更少",
+    "description": "MetadataList 下方的按钮标签，用于重新隐藏由 `metadataList.showMore` 展开的额外项。保持这对标签对称。"
+  },
+  "@astryx.mobileNav.navigation": {
+    "defaultMessage": "导航",
+    "description": "MobileNav 覆盖层对话框在未传入显式标签时，供屏幕阅读器使用的回退名称。"
+  },
+  "@astryx.multiSelector.clearAll": {
+    "defaultMessage": "清除所有 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于 X 上，用于清除 MultiSelector 中所有已选值。示例：`Clear all Countries`。`{label}` 在英文中通常已是复数形式。"
+  },
+  "@astryx.input.readOnly": {
+    "defaultMessage": "只读",
+    "description": "仅屏幕阅读器可见的描述，当平台未对该只读表单控件的宿主元素暴露 aria-readonly 时，附加到该控件上。为简短的状态标签，而非操作指令。"
+  },
+  "@astryx.input.statusButton.error": {
+    "defaultMessage": "错误详情",
+    "description": "当 statusVariant 为 'tooltip' 且状态类型为 error 时，输入框内可聚焦状态图标按钮的无障碍名称。激活或聚焦该按钮会在工具提示中显示错误消息。保持简短——它用于标注纯图标按钮。"
+  },
+  "@astryx.input.statusButton.warning": {
+    "defaultMessage": "警告详情",
+    "description": "当 statusVariant 为 'tooltip' 且状态类型为警告时，输入框内可聚焦状态图标按钮的无障碍名称。激活或聚焦该按钮会在工具提示中显示警告消息。"
+  },
+  "@astryx.input.statusButton.success": {
+    "defaultMessage": "成功详情",
+    "description": "当 statusVariant 为 'tooltip' 且状态类型为 success 时，输入框内可聚焦状态图标按钮的无障碍名称。激活或聚焦该按钮会在工具提示中显示成功消息。"
+  },
+  "@astryx.numberInput.clearLabel": {
+    "defaultMessage": "清除 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于清除 NumberInput 值的 X 上。示例：`Clear Age`、`Clear Quantity`。"
+  },
+  "@astryx.numberInput.decrementLabel": {
+    "defaultMessage": "递减 {label}",
+    "description": "NumberInput 按钮的无障碍标签，该按钮按配置的步长将值减一。示例：`Decrement Quantity`。"
+  },
+  "@astryx.numberInput.incrementLabel": {
+    "defaultMessage": "递增 {label}",
+    "description": "用于 NumberInput 按钮的无障碍标签，该按钮按配置的步长将值增加一。示例：`Increment Quantity`。"
+  },
+  "@astryx.numberInput.invalidNumber": {
+    "defaultMessage": "无效数字",
+    "description": "NumberInput 中仅屏幕阅读器可见的实时区域警报，在输入的文本不是该字段的有效数字时触发。字段在失焦时会静默还原，因此这是屏幕阅读器用户唯一能获得的拒绝反馈。"
+  },
+  "@astryx.selector.clearLabel": {
+    "defaultMessage": "清除 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于清除 Selector 已选值的 X 上。`{label}` 是选择器可见的标签——例如：`Clear Country`。"
+  },
+  "@astryx.sideNavCollapseButton.expandSidebar": {
+    "defaultMessage": "展开侧边栏",
+    "description": "侧边栏当前处于折叠状态时，SideNav 折叠/展开切换按钮的 aria 标签和工具提示（点击可展开）。与 `collapseSidebar` 配合使用。"
+  },
+  "@astryx.sideNavCollapseButton.collapseSidebar": {
+    "defaultMessage": "折叠侧边栏",
+    "description": "侧边栏当前展开时，同一开关上的 aria 标签和工具提示（点击可折叠侧边栏）。与 `expandSidebar` 配合使用。"
+  },
+  "@astryx.sideNavItem.expand": {
+    "defaultMessage": "展开 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于带子项的 SideNav 项旁箭头上，用于分组折叠时。示例：`Expand Settings`。与 `sideNavItem.collapse` 配对使用。"
+  },
+  "@astryx.sideNavItem.collapse": {
+    "defaultMessage": "折叠 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于同一 chevron 上，用于分组展开时。示例：`Collapse Settings`。与 `sideNavItem.expand` 配对使用。"
+  },
+  "@astryx.sideNavItem.submenuLabel": {
+    "defaultMessage": "{label} 子菜单",
+    "description": "从折叠（仅图标）SideNav 项打开以显示其子项的浮出对话框的无障碍名称。{label} 是父项的标签。示例：`Settings submenu`。"
+  },
+  "@astryx.tableFiltering.filterByColumn": {
+    "defaultMessage": "筛选 {header}",
+    "description": "按列筛选控件上的三用字符串：可见标签、占位符和 aria 标签。`{header}` 是列标题——例如：`Filter Name`。保持简短。"
+  },
+  "@astryx.tableGroupedRows.expandGroup": {
+    "defaultMessage": "展开分组 {groupKey}",
+    "description": "分组表格折叠时，组标题旁箭头上的屏幕阅读器专用标签。示例：`Expand group Q1 2024`。与 `collapseGroup` 配合使用。"
+  },
+  "@astryx.tableGroupedRows.collapseGroup": {
+    "defaultMessage": "折叠分组 {groupKey}",
+    "description": "当分组展开时，同一 chevron 上仅供屏幕阅读器读取的标签。示例：`Collapse group Q1 2024`。与 `expandGroup` 配对使用。"
+  },
+  "@astryx.tableRowExpansion.collapseRow": {
+    "defaultMessage": "折叠行",
+    "description": "行当前已展开时，行展开箭头上的屏幕阅读器专用标签。属于四向展开/折叠集合的一部分。"
+  },
+  "@astryx.tableRowExpansion.collapseRowNamed": {
+    "defaultMessage": "折叠 {label}",
+    "description": "当存在人类可读标识时，用于已展开行展开控件的 aria 标签。`label` 是来自 getRowLabel 的行标识。"
+  },
+  "@astryx.tableRowExpansion.expandRow": {
+    "defaultMessage": "展开行",
+    "description": "仅屏幕阅读器可见的标签，用于行当前处于折叠状态时的行展开箭头。与 `collapseRow`、`expandAllRows`、`collapseAllRows` 同属一组四个标签。"
+  },
+  "@astryx.tableRowExpansion.expandRowNamed": {
+    "defaultMessage": "展开 {label}",
+    "description": "当存在人类可读的身份标识时，用于已折叠行展开控件的 aria 标签。`label` 是来自 getRowLabel 的行身份标识。"
+  },
+  "@astryx.tableRowExpansion.columnHeader": {
+    "defaultMessage": "行展开",
+    "description": "用于存放每行展开/折叠箭头的首列，仅供屏幕阅读器读取的标题。该列不显示可见标签。"
+  },
+  "@astryx.tableRowExpansion.collapseAllRows": {
+    "defaultMessage": "折叠所有行",
+    "description": "当所有行都已展开时，同一表头按钮上仅供屏幕阅读器使用的标签。属于四向集合的一部分。"
+  },
+  "@astryx.tableRowExpansion.expandAllRows": {
+    "defaultMessage": "展开所有行",
+    "description": "仅屏幕阅读器可见的标签，用于表头的全部展开/全部折叠按钮，当至少有一行处于折叠状态时显示（点击后展开所有可展开行）。属于四向集合的一部分。"
+  },
+  "@astryx.stepper.label": {
+    "defaultMessage": "进度",
+    "description": "Stepper 有序步骤列表的屏幕阅读器专用回退名称，用于整体描述该序列（例如 `Progress`）。当使用方未传入 `label` 时，用作 aria-label。按 ARIA 惯例使用单数形式。"
+  },
+  "@astryx.stepper.previousStep": {
+    "defaultMessage": "上一步",
+    "description": "Stepper 后退一步按钮的无障碍名称和工具提示。仅在 Stepper 窄到步骤标签已折叠、且 Stepper 可导航时渲染。"
+  },
+  "@astryx.stepper.nextStep": {
+    "defaultMessage": "下一步",
+    "description": "用于将 Stepper 向前移动一步的按钮的无障碍名称和工具提示。与 `stepper.previousStep` 对应；两者保持平行。"
+  },
+  "@astryx.step.goToStep": {
+    "defaultMessage": "转到第 {stepNumber, number} 步：{label}",
+    "description": "Stepper 中可点击步骤的无障碍名称。{stepNumber} 是从 1 开始的位置，{label} 是步骤的可见标签。"
+  },
+  "@astryx.step.goToStepWithStatus": {
+    "defaultMessage": "转到第 {stepNumber, number} 步：{label}，{status}",
+    "description": "可点击且带状态的 Stepper 步骤的无障碍名称。{status} 是已翻译的 `step.status.*` 词语之一（completed/warning/error）。保持与 `step.goToStep` 相同的模式。"
+  },
+  "@astryx.step.optional": {
+    "defaultMessage": "可选",
+    "description": "当步骤为可选（isOptional）时，在 Stepper 步骤标签后附加的可见指示符。非常短；以内联方式出现在标签文本之后。"
+  },
+  "@astryx.step.status.completed": {
+    "defaultMessage": "已完成",
+    "description": "仅屏幕阅读器可见的状态词，在步骤完成时（进度完成或 status=success）渲染在 Stepper 步骤标签旁。小写形容词，在步骤标签后随句子朗读。"
+  },
+  "@astryx.step.status.warning": {
+    "defaultMessage": "警告",
+    "description": "仅屏幕阅读器可见的状态词，当 status=warning 时渲染在 Stepper 步骤标签旁。小写名词/形容词；在步骤标签后于句中朗读。"
+  },
+  "@astryx.step.status.error": {
+    "defaultMessage": "错误",
+    "description": "仅屏幕阅读器可见的状态词，当 status=error 时渲染在 Stepper 步骤标签旁。小写名词；在步骤标签后句中读取。"
+  },
+  "@astryx.switch.loading": {
+    "defaultMessage": "加载中",
+    "description": "仅供屏幕阅读器使用的实时区域播报，在 Switch 处于忙碌状态（显示加载动画、操作进行中）时触发。"
+  },
+  "@astryx.tableTree.collapseRow": {
+    "defaultMessage": "折叠行",
+    "description": "表格树形数据展开器箭头在行当前已展开时的 aria 标签。"
+  },
+  "@astryx.tableTree.collapseRowNamed": {
+    "defaultMessage": "折叠 {label}",
+    "description": "当存在人类可读标识时，用于已展开的 Table 树形数据行的 aria 标签。`label` 是来自 getRowLabel 的行标识。"
+  },
+  "@astryx.tableTree.expandRow": {
+    "defaultMessage": "展开行",
+    "description": "表格树形数据展开器箭头在行当前处于折叠状态时的 aria 标签。"
+  },
+  "@astryx.tableTree.expandRowNamed": {
+    "defaultMessage": "展开 {label}",
+    "description": "为已折叠的 Table 树形数据行提供 aria 标签，前提是存在可读的身份标识。`label` 是来自 getRowLabel 的行身份。"
+  },
+  "@astryx.tableTree.collapseAllRows": {
+    "defaultMessage": "折叠所有行",
+    "description": "表格树形数据表头切换按钮在全部行已展开、点击将折叠时的 aria 标签。"
+  },
+  "@astryx.tableTree.expandAllRows": {
+    "defaultMessage": "展开所有行",
+    "description": "表格树形数据表头切换按钮在行已折叠时的 aria 标签，点击可展开这些行。"
+  },
+  "@astryx.textArea.counter": {
+    "defaultMessage": "{count, number}/{limit, number}",
+    "description": "带字符限制的 TextArea 底部会显示可见字符计数器，例如 `62/2,000`。`{count}` 是已输入的字符数，`{limit}` 是限制数；保留这两个数字，可按语言需要调整顺序或更改分隔符。"
+  },
+  "@astryx.textArea.charactersRemaining": {
+    "defaultMessage": "{count, number} {count, plural, one {个字符} other {个字符}}剩余",
+    "description": "仅屏幕阅读器播报：用户在达到 TextArea 的 maxLength 前还能输入多少字符。当计数接近上限时以礼貌方式播报。`{count}` 是剩余数量——例如：`12 characters remaining`。"
+  },
+  "@astryx.textArea.charactersOverLimit": {
+    "defaultMessage": "{count, number} {count, plural, one {个字符} other {个字符}}超出限制",
+    "description": "当用户输入的字符数超过 TextArea 的 maxLength 时，向屏幕阅读器发出的断言式播报。`{count}` 表示超出多少个字符——例如：`3 characters over the limit`。"
+  },
+  "@astryx.inputClearButton.tooltip": {
+    "defaultMessage": "清除",
+    "description": "清除输入框内 X 按钮的悬停或键盘聚焦提示。动词，祈使式。单独显示在字段旁，只说明操作；屏幕阅读器标签另行说明字段。"
+  },
+  "@astryx.textInput.clearLabel": {
+    "defaultMessage": "清除 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于清除 TextInput 值的 X 上。示例：`Clear Email`、`Clear Name`。"
+  },
+  "@astryx.thumbnail.remove": {
+    "defaultMessage": "移除 {accessibleName}",
+    "description": "缩略图（图片预览标签）上“×”的屏幕阅读器专用标签。`{accessibleName}` 是缩略图的名称——例如：`Remove profile.jpg`。"
+  },
+  "@astryx.thumbnail.open": {
+    "defaultMessage": "打开 {accessibleName}",
+    "description": "“Open” = 启动/显示（不是“展开”，也不是形容词）。可点击缩略图上仅供屏幕阅读器读取的名称——示例：`Open Sunset photo`。"
+  },
+  "@astryx.thumbnail.fallbackName": {
+    "defaultMessage": "缩略图",
+    "description": "无 `alt` 或 `label` 的缩略图（图片预览）的通用屏幕阅读器名称。这是最后的兜底方案，确保控件不会没有名称；优先通过 `alt` 或 `label` 提供真实名称。"
+  },
+  "@astryx.timeInput.clearLabel": {
+    "defaultMessage": "清除 {label}",
+    "description": "仅屏幕阅读器可见的标签，位于清除 TimeInput 值的 X 上。示例：`Clear Start time`。"
+  },
+  "@astryx.timestamp.copyValue": {
+    "defaultMessage": "复制 {value}",
+    "description": "Timestamp 可复制悬浮卡片行复制按钮的默认状态 aria 标签。`value` 是该行显示的格式化时间点（例如 `Copy February 19, 2026 at 5:00:00 PM UTC`）。祈使动词。与 `timestamp.copied`（点击后状态）配对使用。"
+  },
+  "@astryx.timestamp.copy": {
+    "defaultMessage": "复制",
+    "description": "复制"
+  },
+  "@astryx.timestamp.copied": {
+    "defaultMessage": "已复制",
+    "description": "复制成功后约 1.5 秒内，Timestamp 复制按钮上的 aria 标签，以及向 polite 实时区域播报的文本。使用过去分词（“has been copied”）；与 `timestamp.copyValue` 配对使用。"
+  },
+  "@astryx.timestamp.detailsLabel": {
+    "defaultMessage": "时间戳详情",
+    "description": "Timestamp 可复制悬浮卡片弹窗的无障碍名称，该弹窗按配置的时区/格式列出时间点，每行带一个复制按钮。"
+  },
+  "@astryx.token.remove": {
+    "defaultMessage": "移除 {label}",
+    "description": "仅屏幕阅读器可见的标签，用于单个 Token/chip 上的“×”。示例：`Remove John Smith`、`Remove Active`。祈使动词。"
+  },
+  "@astryx.commandPalette.footer.navigate": {
+    "defaultMessage": "导航",
+    "description": "CommandPalette 页脚中的键盘提示，与上/下箭头图标配对。告知用户方向键可在条目间移动。"
+  },
+  "@astryx.commandPalette.footer.select": {
+    "defaultMessage": "选择",
+    "description": "CommandPalette 页脚中的键盘提示，与 Enter 键图标配对。告知用户按 Enter 可激活高亮项。"
+  },
+  "@astryx.commandPalette.footer.close": {
+    "defaultMessage": "关闭",
+    "description": "CommandPalette 页脚中的键盘提示，与 Escape 键图标配对显示。告知用户按 Escape 可关闭面板。"
+  },
+  "@astryx.multiSelector.selectionCleared": {
+    "defaultMessage": "已清除选择",
+    "description": "多选选择器中最后一个已选项被取消选择后，向屏幕阅读器发出的礼貌提示。实时区域文本，从不在屏幕上显示；过去分词（“has been cleared”）。"
+  },
+  "@astryx.multiSelector.allSelected": {
+    "defaultMessage": "已选择全部",
+    "description": "MultiSelector 中每个选项都被选中后，屏幕阅读器给出的礼貌提示。这是实时区域文本，不会显示在屏幕上；“all”是限定词（如“all the options”）。"
+  },
+  "@astryx.multiSelector.selectionCount": {
+    "defaultMessage": "已选择 {count, number} / {total, number}",
+    "description": "礼貌的屏幕阅读器播报，说明 MultiSelector 已选中选项数与总数，每次切换后朗读。实时区域文本，从不在屏幕上显示；示例：`3 of 12 selected`。"
+  },
+  "@astryx.multiSelector.selectedCount": {
+    "defaultMessage": "{count, plural, one {已选择 # 项} other {已选择 # 项}}",
+    "description": "MultiSelector 关闭时，若触发器显示已选选项数量（`triggerDisplay=\"count\"`），触发器上显示的文本，例如 `2 selected`。`{count}` 为已选选项数量；若你的语言需要复数形式，请使用复数形式。"
+  },
+  "@astryx.multiSelector.createOption": {
+    "defaultMessage": "创建“{query}”",
+    "description": "当 `hasCreate` 已设置且输入文本不匹配任何选项时，MultiSelector 搜索面板第一行的标签。选中它会向调用方报告一次创建操作。`{query}` 是用户输入的去除首尾空白后的文本，显示在引号中。"
+  },
+  "@astryx.multiSelector.optionCreated": {
+    "defaultMessage": "{label} 已创建",
+    "description": "在选中 MultiSelector 的创建行后，向屏幕阅读器播报的礼貌提示。这是实时区域文本，不会显示在屏幕上；`{label}` 是用户输入的文本。"
+  },
+  "@astryx.multiSelector.emptySearchResults": {
+    "defaultMessage": "未找到结果",
+    "description": "当搜索查询未匹配到任何选项时，显示在 MultiSelector 的下拉面板中，同时通过礼貌的实时区域播报。简短；语气中性（不带错误感）。"
+  },
+  "@astryx.multiSelector.resultCount": {
+    "defaultMessage": "{count, number} {count, plural, one {条结果} other {条结果}}",
+    "description": "礼貌地向屏幕阅读器播报有多少个 MultiSelector 选项匹配搜索查询，在用户输入时朗读。实时区域文本，从不在屏幕上显示；示例：`1 result`、`12 results`。"
+  },
+  "@astryx.selector.emptySearchResults": {
+    "defaultMessage": "未找到结果",
+    "description": "当搜索查询未匹配任何选项时，显示在选择器下拉面板中，同时通过礼貌的实时区域播报。简短；语气中立（非报错语气）。"
+  },
+  "@astryx.selector.resultCount": {
+    "defaultMessage": "{count, number} {count, plural, one {个结果} other {个结果}}",
+    "description": "礼貌的屏幕阅读器播报，说明有多少 Selector 选项匹配搜索查询，在用户输入时朗读。实时区域文本，从不在屏幕上显示；示例：`1 result`、`12 results`。"
+  },
+  "@astryx.typeahead.resultCount": {
+    "defaultMessage": "{count, number} {count, plural, one {个结果} other {个结果}}",
+    "description": "礼貌地向屏幕阅读器播报 Typeahead 搜索返回了多少条建议。实时区域文本，不会显示在屏幕上；示例：`1 result`、`12 results`。"
+  },
+  "@astryx.tokenizer.tokenAdded": {
+    "defaultMessage": "已添加 {label}",
+    "description": "在 Tokenizer 中添加令牌后（无论是从建议中选取还是新建），向屏幕阅读器发出的礼貌提示。这是实时区域文本，不会显示在屏幕上；`{label}` 是令牌的可见文本。"
+  },
+  "@astryx.tokenizer.tokenRemoved": {
+    "defaultMessage": "已移除 {label}",
+    "description": "从 Tokenizer 中移除令牌后（通过其 × 按钮或 Backspace），屏幕阅读器会礼貌播报。这是实时区域文本，不会显示在屏幕上；`{label}` 是令牌的可见文本。"
+  },
+  "@astryx.tokenizer.search": {
+    "defaultMessage": "搜索 {label}",
+    "description": "Tokenizer 底部弹层（触摸呈现方式）顶部搜索字段的无障碍名称。`{label}` 是该字段自身的标签，例如 `Search Tags`。屏幕上不显示。"
+  },
+  "@astryx.tokenizer.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "Tokenizer 底部面板顶部搜索框中的占位符，在查询为空时显示。单个词加省略号。"
+  },
+  "@astryx.tokenizer.noResultsDescription": {
+    "defaultMessage": "尝试其他搜索。",
+    "description": "用于 Tokenizer 底部弹层中无结果空状态标题下方的说明句，建议用户更改查询。"
+  },
+  "@astryx.tokenizer.create": {
+    "defaultMessage": "创建“{value}”",
+    "description": "Tokenizer 创建行的标签，用于内联菜单和底部弹层中，当 `hasCreate` 已设置且输入文本不匹配任何现有项时显示。`{value}` 为输入的文本，例如 `Create \"Marketing\"`。"
+  },
+  "@astryx.tokenizer.add": {
+    "defaultMessage": "添加",
+    "description": "Tokenizer 底部弹层中创建行末尾按钮的可见标签；按下后会将输入的文本添加为新 token。祈使动词；简短。"
+  },
+  "@astryx.tokenizer.addValue": {
+    "defaultMessage": "添加 {value}",
+    "description": "Tokenizer 底部弹层中创建行的 Add 按钮的屏幕阅读器专用名称。`{value}` 是输入的文本，例如 `Add Marketing`。"
+  },
+  "@astryx.tokenizer.done": {
+    "defaultMessage": "完成",
+    "description": "用于即时应用 Tokenizer 底部弹层流程的标签。草稿选择流程使用 tokenizer.save。"
+  },
+  "@astryx.tokenizer.save": {
+    "defaultMessage": "保存",
+    "description": "分词器底部面板中主页脚按钮的标签；按下后提交当前选择草稿并关闭面板。祈使动词；简短。"
+  },
+  "@astryx.tokenizer.selectionLimit": {
+    "defaultMessage": "最多选择 {count, plural, one {# 项} other {# 项}}",
+    "description": "当 Tokenizer 选择草稿超过 maxEntries 限制时，禁用的保存操作上显示的提示。该限制在面板打开期间发生了变化。`{count}` 是当前最大值。"
+  },
+  "@astryx.tokenizer.discardChangesTitle": {
+    "defaultMessage": "放弃更改？",
+    "description": "更改选择草稿后，有人试图关闭 Tokenizer 底部弹窗时显示的确认对话框标题。一个问句。"
+  },
+  "@astryx.tokenizer.discardChangesDescription": {
+    "defaultMessage": "你对 {label} 的更改尚未保存。",
+    "description": "Tokenizer 底部弹窗中未保存内容关闭确认框的正文。`{label}` 是字段标签，例如 `Your changes to Tags haven't been saved.`"
+  },
+  "@astryx.tokenizer.keepEditing": {
+    "defaultMessage": "继续编辑",
+    "description": "Tokenizer 未保存关闭确认中安全取消操作的标签。点击后关闭确认并返回未修改的草稿。"
+  },
+  "@astryx.tokenizer.discardChanges": {
+    "defaultMessage": "放弃更改",
+    "description": "Tokenizer 未保存关闭确认中破坏性操作的标签。点击后关闭面板，不提交选择草稿。"
+  },
+  "@astryx.tokenizer.clearAllTitle": {
+    "defaultMessage": "清除所有已选项目？",
+    "description": "当用户在 Tokenizer 底部面板中按下“全部清除”时显示的确认对话框标题。一个问句。"
+  },
+  "@astryx.tokenizer.clearAllDescription": {
+    "defaultMessage": "这将从 {label} 中移除所有选中项。",
+    "description": "Tokenizer 底部弹窗中“全部清除”确认对话框的正文。`{label}` 是该字段自身的标签，例如 `This removes all selected items from Tags.`"
+  },
+  "@astryx.tokenizer.nothingToClear": {
+    "defaultMessage": "未选择任何内容",
+    "description": "未选中任何项时，Tokenizer 底部面板中禁用的“全部清除”操作的提示；保持该操作可聚焦，并说明它为何不起作用。"
+  },
+  "@astryx.tokenizer.allRemoved": {
+    "defaultMessage": "已移除所有项目",
+    "description": "Tokenizer 的 Clear all 移除所有已选项目后，向屏幕阅读器播报的礼貌提示：包括内联 Clear all 按钮，或底部面板中确认的 Clear all。该文本属于实时区域，不会显示在屏幕上。"
+  },
+  "@astryx.tokenizer.selectedCount": {
+    "defaultMessage": "已选择 {count, number} 项",
+    "description": "仅屏幕阅读器可见的引导语，位于 Tokenizer 底部弹层触发器（触屏呈现）上描述的起始部分，其后是已选 token 标签。`{count}` 表示已选 token 数量，例如 `2 selected`。屏幕上不显示。"
+  },
+  "@astryx.tokenizer.clearSelection": {
+    "defaultMessage": "清除选择",
+    "description": "Tokenizer 底部面板中“全部清除”确认对话框内破坏性操作按钮的标签。祈使动词短语；确认移除所有 token。"
+  },
+  "@astryx.lightbox.imagePosition": {
+    "defaultMessage": "第 {index, number} 张图片，共 {total, number} 张",
+    "description": "当 Lightbox 切换到没有替代文本的媒体项时，向屏幕阅读器发出的礼貌播报。实时区域文本，不会显示在屏幕上；`{index}` 从 1 开始，示例：`Image 3 of 12`。"
+  },
+  "@astryx.lightbox.mediaPosition": {
+    "defaultMessage": "{alt}，第 {index, number} 个，共 {total, number} 个",
+    "description": "当 Lightbox 切换到带有 alt 文本的媒体项时，向屏幕阅读器发出礼貌播报，将 alt 文本与该项的位置组合。实时区域文本，不会显示在屏幕上；示例：`Sunset over the bay, 3 of 12`。"
+  },
+  "@astryx.transferList.selectedLabel": {
+    "defaultMessage": "已选择",
+    "description": "实验室 TransferList 右侧面板上方的默认标题，该面板存放用户已选中的选项。使用方通常会用领域名词覆盖它（例如“显示的列”）。"
+  },
+  "@astryx.transferList.availableLabel": {
+    "defaultMessage": "可用",
+    "description": "左侧面板上方的默认标题，该面板用于放置实验室 TransferList 中尚未选择的选项。使用者通常会用领域名词覆盖它（例如“隐藏列”）。"
+  },
+  "@astryx.transferList.ungroupedLabel": {
+    "defaultMessage": "其他",
+    "description": "用于未设置 `group` 的可用选项分组的标题，仅当部分选项已分组、部分未分组时显示，以便未分组的选项仍有标题。"
+  },
+  "@astryx.transferList.searchPlaceholder": {
+    "defaultMessage": "搜索…",
+    "description": "用于筛选实验 TransferList 两个面板的单一搜索字段的占位符。与 `selector.searchPlaceholder` 使用相同英文，但为独立键，以便针对两个列表分别措辞。"
+  },
+  "@astryx.transferList.searchLabel": {
+    "defaultMessage": "搜索 {label}",
+    "description": "实验室 TransferList 搜索字段的屏幕阅读器专用标签，说明正在搜索的内容。`{label}` 是组件自身的标签（例如 \"Search Table columns\"）。"
+  },
+  "@astryx.transferList.selectedEmpty": {
+    "defaultMessage": "未选择任何选项",
+    "description": "在实验室 TransferList 的已选面板中，当用户尚未选择任何内容时显示的消息。"
+  },
+  "@astryx.transferList.availableEmpty": {
+    "defaultMessage": "没有可用选项",
+    "description": "当所有选项都已移到已选面板时，实验室 TransferList 的可用面板内显示的消息。"
+  },
+  "@astryx.transferList.noResults": {
+    "defaultMessage": "无结果",
+    "description": "当搜索查询在 lab TransferList 的任一面板中未匹配到任何内容时，该面板内显示的消息。"
+  },
+  "@astryx.transferList.clear": {
+    "defaultMessage": "清除",
+    "description": "实验室 TransferList 选中面板标题栏中批量操作的标签，用于移除所有允许移除的选项。锁定的选项保留。"
+  },
+  "@astryx.transferList.addAll": {
+    "defaultMessage": "全部添加",
+    "description": "实验室 TransferList 可用面板标题栏中批量操作的标签，该操作将所有剩余选项移入已选面板。"
+  },
+  "@astryx.transferList.addOption": {
+    "defaultMessage": "添加 {label}",
+    "description": "实验室 TransferList 中每行 + 按钮的无障碍标签，该按钮将一个选项移入已选面板。`{label}` 是该选项的可见文本（例如 \"Add Owner\"）。"
+  },
+  "@astryx.transferList.removeOption": {
+    "defaultMessage": "移除 {label}",
+    "description": "实验室 TransferList 中，选中面板每行 × 按钮的无障碍标签，用于将某个选项移出选中面板。`{label}` 是该选项的可见文本（例如“Remove Name”）。"
+  },
+  "@astryx.transferList.reorderOption": {
+    "defaultMessage": "重新排序 {label}",
+    "description": "用于在实验性 TransferList 的已选面板中重排单个选项的每行拖拽手柄上的无障碍标签。`{label}` 是该选项的可见文本（例如 \"Reorder Name\"）。"
+  },
+  "@astryx.transferList.transferDisabled": {
+    "defaultMessage": "{label} 无法移动",
+    "description": "默认工具提示，说明实验室 TransferList 中锁定的选项为何无法在面板间转移。`{label}` 是该选项的可见文本。使用者可按选项覆盖。"
+  },
+  "@astryx.transferList.reorderDisabled": {
+    "defaultMessage": "{label} 无法重新排序",
+    "description": "用于说明实验室 TransferList 中已锁定选项为何无法在已选面板内移动的默认工具提示。`{label}` 是该选项的可见文本。使用者可按选项覆盖。"
+  },
+  "@astryx.transferList.reorderInstructions": {
+    "defaultMessage": "按空格键或回车键拾取项目。使用上箭头、下箭头、Home 或 End 移动。按空格键或回车键放下，或按 Escape 取消。",
+    "description": "仅供屏幕阅读器使用的说明，描述键盘重排约定，供实验室 TransferList 中每个拖拽手柄引用。从不在屏幕上显示。请写出你所在语言区域的用户实际按下的按键。"
+  },
+  "@astryx.transferList.announceAdded": {
+    "defaultMessage": "{label} 已添加。已选择 {count, number} {count, plural, one {项} other {项}}。",
+    "description": "实验室 TransferList 中，某个选项移入已选面板后，屏幕阅读器给出的礼貌播报。这是实时区域文本，不会显示在屏幕上；`{label}` 是该选项的可见文本，`{count}` 是新的已选总数。"
+  },
+  "@astryx.transferList.announceRemoved": {
+    "defaultMessage": "{label} 已移除。已选择 {count, number} {count, plural, one {项} other {项}}。",
+    "description": "实验室 TransferList 中某个选项移出已选面板后，向屏幕阅读器发出的礼貌提示。实时区域文本，不在屏幕上显示；`{label}` 是该选项的可见文本，`{count}` 是新的已选总数。"
+  },
+  "@astryx.transferList.announceBulkAdded": {
+    "defaultMessage": "{count, number} {count, plural, one {项} other {项}}已添加。",
+    "description": "实验室 TransferList 中“全部添加”批量操作后向屏幕阅读器播报的礼貌提示。实时区域文本，从不在屏幕上显示；`{count}` 表示移动了多少个选项。"
+  },
+  "@astryx.transferList.announceBulkRemoved": {
+    "defaultMessage": "{count, number} 项已移除。",
+    "description": "实验室 TransferList 中执行 Clear 批量操作后，向屏幕阅读器发出的礼貌提示。这是实时区域文本，不会显示在屏幕上；`{count}` 表示移动了多少个选项。"
+  },
+  "@astryx.transferList.announceGrabbed": {
+    "defaultMessage": "{label} 已拾取，位置 {position, number} / {total, number}。使用方向键移动，空格键或回车键放下，或按 Escape 取消。",
+    "description": "当实验室 TransferList 行进入键盘重排模式时，向屏幕阅读器发出的礼貌提示。这是实时区域文本，不会显示在屏幕上；`{position}` 在所选面板内从 1 开始计数。"
+  },
+  "@astryx.transferList.announceMoveCancelled": {
+    "defaultMessage": "{label} 移动已取消。",
+    "description": "当实验室 TransferList 通过 Escape 键或取消指针拖拽放弃重新排序并恢复原始顺序时，向屏幕阅读器发出的礼貌提示。实时区域文本，从不在屏幕上显示。"
+  },
+  "@astryx.transferList.announceDropped": {
+    "defaultMessage": "{label} 被拖放到第 {position, number} 位，共 {total, number} 位。",
+    "description": "实验室 TransferList 在新位置完成重排时，向屏幕阅读器播报的礼貌提示。这是实时区域文本，不会显示在屏幕上；`{position}` 为所选面板内的从 1 开始的位置。"
+  },
+  "@astryx.transferList.announceReturned": {
+    "defaultMessage": "{label} 已返回位置 {position, number}。",
+    "description": "礼貌的屏幕阅读器播报，用于实验室 TransferList 指针拖拽在起始位置结束时，即顺序未改变。实时区域文本，从不在屏幕上显示；`{position}` 从 1 开始计数。"
+  },
+  "@astryx.transferList.announceMovedToPosition": {
+    "defaultMessage": "{label}，第 {position, number} 个，共 {total, number} 个。",
+    "description": "在实验进行中的 TransferList 重排序过程中，每次按方向键移动一步后，向屏幕阅读器发出的礼貌播报。这是实时区域文本，不会显示在屏幕上；`{position}` 是在所选面板内的从 1 开始的序号。"
+  },
+  "@astryx.transferList.announceSearchResults": {
+    "defaultMessage": "{count, number} 个{count, plural, one {项目} other {项目}}已找到。",
+    "description": "礼貌地向屏幕阅读器播报实验室 TransferList 搜索在两个面板中匹配到的选项数量。实时区域文本，不在屏幕上显示。"
+  },
+  "@astryx.transferListSelector.apply": {
+    "defaultMessage": "应用",
+    "description": "用于提交暂存的实验 TransferListSelector 草稿并关闭它的按钮标签。仅在暂存提交模式下渲染。"
+  },
+  "@astryx.transferListSelector.cancel": {
+    "defaultMessage": "取消",
+    "description": "用于丢弃实验室 TransferListSelector 已暂存草稿并关闭它的按钮标签。仅在暂存提交模式下渲染。"
+  },
+  "@astryx.transferListSelector.triggerLabel": {
+    "defaultMessage": "已选择 {count, number} 项",
+    "description": "实验室 TransferListSelector 关闭触发器上的默认摘要，说明当前已选多少个选项。使用方通常会用领域短语覆盖它（例如“7 列”）。"
+  },
+  "@astryx.emojiPicker.label": {
+    "defaultMessage": "表情符号",
+    "description": "实验室 EmojiPicker 中表情滚动列表的默认无障碍名称，以及未悬停或聚焦任何表情时的页脚文本。"
+  },
+  "@astryx.emojiPicker.searchLabel": {
+    "defaultMessage": "搜索表情符号",
+    "description": "实验室 EmojiPicker 搜索字段的默认占位符和隐藏标签。"
+  },
+  "@astryx.emojiPicker.frequentlyUsed": {
+    "defaultMessage": "常用",
+    "description": "EmojiPicker 实验组中第一组的标题，即宿主常用或最近使用的表情符号。"
+  },
+  "@astryx.emojiPicker.searchResults": {
+    "defaultMessage": "搜索结果",
+    "description": "实验室 EmojiPicker 在搜索框有文本时显示的单组标题。"
+  },
+  "@astryx.emojiPicker.noResults": {
+    "defaultMessage": "没有匹配“{query}”的表情符号",
+    "description": "当没有 emoji 名称或关键词匹配搜索时，在实验室 EmojiPicker 中显示。`query` 是搜索文本。"
+  },
+  "@astryx.emojiPicker.loading": {
+    "defaultMessage": "正在加载表情符号",
+    "description": "EmojiPicker 在加载其内置 emoji 集时显示的加载指示器的无障碍名称。"
+  },
+  "@astryx.emojiPicker.loadFailed": {
+    "defaultMessage": "无法加载更多表情符号。",
+    "description": "当 EmojiPicker 内置的表情集加载失败时，实验室中展示的 EmojiPicker 仍会显示常用表情。"
+  },
+  "@astryx.emojiPicker.groupSmileysEmotion": {
+    "defaultMessage": "表情符号与情绪",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 表情与情绪分组的标题。"
+  },
+  "@astryx.emojiPicker.groupPeopleBody": {
+    "defaultMessage": "人物与身体",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 表情符号分组（人物、手势和身体部位）的标题。"
+  },
+  "@astryx.emojiPicker.groupAnimalsNature": {
+    "defaultMessage": "动物与自然",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 动植物表情分组的标题。"
+  },
+  "@astryx.emojiPicker.groupFoodDrink": {
+    "defaultMessage": "餐饮",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 食品和饮料表情分组的标题。"
+  },
+  "@astryx.emojiPicker.groupTravelPlaces": {
+    "defaultMessage": "旅行与地点",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 地点、交通工具和天气表情符号组的标题。"
+  },
+  "@astryx.emojiPicker.groupActivities": {
+    "defaultMessage": "活动",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 体育、游戏和活动表情分组的标题。"
+  },
+  "@astryx.emojiPicker.groupObjects": {
+    "defaultMessage": "对象",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 日常物品表情分组的标题。"
+  },
+  "@astryx.emojiPicker.groupSymbols": {
+    "defaultMessage": "符号",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 符号与标志表情分组的标题。"
+  },
+  "@astryx.emojiPicker.groupFlags": {
+    "defaultMessage": "标志",
+    "description": "实验室 EmojiPicker 中 Unicode CLDR 旗帜表情分组的标题。"
+  },
+  "@astryx.comments.retry": {
+    "defaultMessage": "重试",
+    "description": "实验室评论面板或评论编辑器中错误横幅上的操作，用于重试失败的操作。"
+  },
+  "@astryx.commentComposer.placeholder": {
+    "defaultMessage": "写评论…",
+    "description": "实验室 CommentComposer 的默认占位符，即讨论中用于输入新评论的输入框。"
+  },
+  "@astryx.commentComposer.noAgents": {
+    "defaultMessage": "没有代理",
+    "description": "在实验室 CommentComposer 的斜杠命令菜单中，当 `/` 后输入的内容没有匹配任何 AI agent 时显示。"
+  },
+  "@astryx.commentComposer.agents": {
+    "defaultMessage": "代理",
+    "description": "实验室 CommentComposer 的斜杠命令菜单的无障碍名称，该菜单列出评论可指向的 AI 智能体。"
+  },
+  "@astryx.commentComposer.uploadFailed": {
+    "defaultMessage": "无法添加图片",
+    "description": "实验 CommentComposer 中上传附加图片失败时显示的错误横幅标题；其后跟随一个重试操作。"
+  },
+  "@astryx.commentComposer.imagesOnly": {
+    "defaultMessage": "只能添加图片文件",
+    "description": "实验室 CommentComposer 中附加、粘贴或拖入非图片文件时显示的错误横幅标题。"
+  },
+  "@astryx.commentComposer.chooseImages": {
+    "defaultMessage": "选择图片",
+    "description": "操作实验室 CommentComposer 错误横幅，用于打开图片文件选择器。"
+  },
+  "@astryx.commentComposer.imageAlt": {
+    "defaultMessage": "图片附件",
+    "description": "上传图片本身没有替代文本时，CommentComposer 写入评论的替代文本。"
+  },
+  "@astryx.commentComposer.removeQuote": {
+    "defaultMessage": "移除引用文本",
+    "description": "实验室 CommentComposer 中引用段落旁的按钮，用于从新行内评论中移除该引用。"
+  },
+  "@astryx.commentComposer.attachImages": {
+    "defaultMessage": "附加图片",
+    "description": "实验室 CommentComposer 中用于打开文件选择器以向评论添加图片的按钮。"
+  },
+  "@astryx.commentComposer.addEmoji": {
+    "defaultMessage": "添加表情符号",
+    "description": "实验室 CommentComposer 中打开表情选择器的按钮，以及该选择器弹出层的无障碍名称。"
+  },
+  "@astryx.commentComposer.cancel": {
+    "defaultMessage": "取消",
+    "description": "位于正在编辑现有评论的 lab CommentComposer 标签旁的文字按钮；它会放弃此次编辑。"
+  },
+  "@astryx.comments.actionsLabel": {
+    "defaultMessage": "{name} 评论的操作",
+    "description": "实验室 Comments 面板中评论操作菜单按钮的无障碍名称。`name` 是评论作者的名字。"
+  },
+  "@astryx.comments.addReaction": {
+    "defaultMessage": "添加表情回应",
+    "description": "实验室评论面板中评论上的按钮，点击后打开可选的反应集合。"
+  },
+  "@astryx.comments.agentBadge": {
+    "defaultMessage": "智能体",
+    "description": "实验室 Comments 面板中，评论作者名称旁的徽章，表示该评论者是 AI 代理而非真人。"
+  },
+  "@astryx.comments.agentLogo": {
+    "defaultMessage": "{name} 标志",
+    "description": "用于实验室 Comments 面板中作为 AI agent 头像的 logo 替代文本。`name` 是 agent 的名称。"
+  },
+  "@astryx.comments.chooseReaction": {
+    "defaultMessage": "选择一个回应",
+    "description": "评论在实验室 Comments 面板中可添加的反应列表弹出层的无障碍名称。"
+  },
+  "@astryx.comments.copyLink": {
+    "defaultMessage": "复制评论链接",
+    "description": "实验室评论面板中评论上的按钮，用于复制该评论的链接。"
+  },
+  "@astryx.comments.currentVersion": {
+    "defaultMessage": "当前版本",
+    "description": "在实验室 Comments 面板的编辑历史对话框中标记当前显示的版本。"
+  },
+  "@astryx.comments.delete": {
+    "defaultMessage": "删除",
+    "description": "评论操作菜单中的一项，以及实验室 Comments 面板中删除对话框的确认操作。"
+  },
+  "@astryx.comments.deleteDescription": {
+    "defaultMessage": "删除 {name} 的评论？此操作无法撤销。",
+    "description": "用于确认在实验室评论面板中删除评论的对话框正文。`name` 是评论的作者。"
+  },
+  "@astryx.comments.deleteFailed": {
+    "defaultMessage": "此评论无法删除。",
+    "description": "删除失败时，lab 的 Comments 面板中该评论上显示的错误。"
+  },
+  "@astryx.comments.deleteFailedRetry": {
+    "defaultMessage": "无法删除此评论，请重试。",
+    "description": "实验室 Comments 面板的删除确认对话框在删除失败后显示并播报的文本。"
+  },
+  "@astryx.comments.deleteTitle": {
+    "defaultMessage": "删除评论？",
+    "description": "用于确认在实验 Comments 面板中删除评论的对话框标题。"
+  },
+  "@astryx.comments.edit": {
+    "defaultMessage": "编辑",
+    "description": "实验室评论面板中评论操作菜单的一项，用于编辑查看者自己的评论。"
+  },
+  "@astryx.comments.editFailed": {
+    "defaultMessage": "你的修改无法保存。",
+    "description": "在实验的评论面板中，保存编辑失败时评论上显示的错误；其后跟随一个“重试”操作。"
+  },
+  "@astryx.comments.editPlaceholder": {
+    "defaultMessage": "编辑评论",
+    "description": "用于在实验室 Comments 面板中编辑现有评论的编辑器占位符。"
+  },
+  "@astryx.comments.edited": {
+    "defaultMessage": "已编辑",
+    "description": "在实验室 Comments 面板中，评论时间旁的文字，表示该评论在发布后被修改过；若存在编辑历史，点击可打开。"
+  },
+  "@astryx.comments.editingContext": {
+    "defaultMessage": "编辑评论",
+    "description": "位于实验室 Comments 面板中、用于编辑现有评论的编辑器上方标签；其后跟随一个 Cancel 操作。"
+  },
+  "@astryx.comments.hideReplies": {
+    "defaultMessage": "隐藏回复",
+    "description": "实验室 Comments 面板中，展开的评论线程下方的文本按钮，用于折叠其回复。"
+  },
+  "@astryx.comments.historyEmptyDescription": {
+    "defaultMessage": "此评论没有更早的版本。",
+    "description": "实验室 Comments 面板编辑历史对话框的空状态描述。"
+  },
+  "@astryx.comments.historyEmptyTitle": {
+    "defaultMessage": "无编辑历史",
+    "description": "无早期版本评论的实验室评论面板编辑历史对话框的空状态标题。"
+  },
+  "@astryx.comments.historyFailed": {
+    "defaultMessage": "编辑历史加载失败",
+    "description": "实验室评论面板编辑历史对话框中的错误横幅标题。"
+  },
+  "@astryx.comments.historyLoadFailed": {
+    "defaultMessage": "评论的编辑历史加载失败，请重试。",
+    "description": "加载版本失败时，实验 Comments 面板编辑历史对话框中显示的错误描述。"
+  },
+  "@astryx.comments.historyLoading": {
+    "defaultMessage": "正在加载编辑历史",
+    "description": "在实验室 Comments 面板中加载评论早期版本时显示的加载指示器的无障碍名称。"
+  },
+  "@astryx.comments.historySubtitle": {
+    "defaultMessage": "{name} 的评论",
+    "description": "实验室 Comments 面板中编辑历史对话框的副标题。`name` 是评论的作者。"
+  },
+  "@astryx.comments.historyTitle": {
+    "defaultMessage": "编辑历史",
+    "description": "在实验室 Comments 面板中，列出某条评论早期版本的对话框标题。"
+  },
+  "@astryx.comments.linkCopied": {
+    "defaultMessage": "评论链接已复制",
+    "description": "在实验室 Comments 面板中，复制后 Copy 评论链接按钮的标签会显示两秒钟。"
+  },
+  "@astryx.comments.otherReactors": {
+    "defaultMessage": "{count, plural, one {# 个其他} other {# 个其他}}",
+    "description": "实验室评论面板中，对某条评论做出回应的人员列表的最后一项，用于未列出姓名的人。`count` 表示人数。"
+  },
+  "@astryx.comments.outdated": {
+    "defaultMessage": "已过时",
+    "description": "实验室 Comments 面板中，内联评论所引用段落被编辑删除后，该段落旁显示的徽章。"
+  },
+  "@astryx.comments.reactionCelebrate": {
+    "defaultMessage": "庆祝",
+    "description": "评论的 Comments 面板中，默认提供的 party-popper 回应名称。"
+  },
+  "@astryx.comments.reactionCount": {
+    "defaultMessage": "{reaction}：{count, number}",
+    "description": "实验室 Comments 面板中评论上互动切换按钮的无障碍名称。`reaction` 是互动名称，例如 \"Like\"；`count` 是互动人数。"
+  },
+  "@astryx.comments.reactionFailed": {
+    "defaultMessage": "无法保存你的表情回应。",
+    "description": "在实验室评论面板中，对评论添加或移除表情回应失败时显示的错误。"
+  },
+  "@astryx.comments.reactionLaugh": {
+    "defaultMessage": "哈哈",
+    "description": "实验室评论面板中评论默认提供的“笑”表情反应的名称。"
+  },
+  "@astryx.comments.reactionLike": {
+    "defaultMessage": "喜欢",
+    "description": "评论区实验性 Comments 面板中默认提供的点赞回应名称。"
+  },
+  "@astryx.comments.reactionLove": {
+    "defaultMessage": "爱",
+    "description": "评论的实验室 Comments 面板中，默认提供的红心回应名称。"
+  },
+  "@astryx.comments.reactionSad": {
+    "defaultMessage": "悲伤",
+    "description": "评论的哭脸回应在实验室 Comments 面板中默认提供的名称。"
+  },
+  "@astryx.comments.reactionWow": {
+    "defaultMessage": "哇",
+    "description": "实验室评论面板中评论默认提供的“惊讶”反应名称。"
+  },
+  "@astryx.comments.reopen": {
+    "defaultMessage": "重新打开",
+    "description": "实验室 Comments 面板中已解决的评论线程上的按钮，用于重新打开该线程。"
+  },
+  "@astryx.comments.reopenFailed": {
+    "defaultMessage": "此话题无法重新打开。",
+    "description": "实验室 Comments 面板中，重新打开评论线程失败时显示的报错。"
+  },
+  "@astryx.comments.reply": {
+    "defaultMessage": "回复",
+    "description": "实验室 Comments 面板中评论上的按钮，点击后打开对该评论的回复。"
+  },
+  "@astryx.comments.replyFailed": {
+    "defaultMessage": "你的回复无法发布。",
+    "description": "在实验室 Comments 面板中，回复输入框上方显示的发布失败错误提示；草稿会保留。"
+  },
+  "@astryx.comments.replyPlaceholder": {
+    "defaultMessage": "回复 {name}…",
+    "description": "实验室 Comments 面板评论线程中回复编辑器的占位符。`name` 是被回复评论的作者。"
+  },
+  "@astryx.comments.replyingContext": {
+    "defaultMessage": "回复 {name}",
+    "description": "实验室 Comments 面板评论线程中回复编辑器的无障碍上下文。`name` 是被回复评论的作者。"
+  },
+  "@astryx.comments.resolve": {
+    "defaultMessage": "标记为已解决",
+    "description": "Comments 面板中评论线程上的按钮，用于将线程标记为已解决。"
+  },
+  "@astryx.comments.resolveFailed": {
+    "defaultMessage": "此讨论串无法被解决。",
+    "description": "在实验室 Comments 面板的评论线程上，标记为已解决失败时显示的错误。"
+  },
+  "@astryx.comments.resolved": {
+    "defaultMessage": "已解决",
+    "description": "在实验室 Comments 面板中，评论线程时间旁的文字，用于标记该线程已解决。"
+  },
+  "@astryx.comments.resolvedBy": {
+    "defaultMessage": "由 {name} 解决",
+    "description": "实验室 Comments 面板中评论线程上“已解决”文本的工具提示。`name` 是解决该评论的人。"
+  },
+  "@astryx.comments.errorAnnouncement": {
+    "defaultMessage": "{title} {description}",
+    "description": "实验室 Comments 面板中错误 Banner 的屏幕阅读器播报，该 Banner 包含标题和描述，在 Banner 出现时播报一次。`title` 是 Banner 的标题（例如 `Couldn't send this comment.`），`description` 是其描述（例如 `Retrying didn't work.`）。可根据语言需要调整顺序或标点。"
+  },
+  "@astryx.comments.retryFailed": {
+    "defaultMessage": "重试没有成功。",
+    "description": "在实验室 Comments 面板中，一条评论发布失败后重试仍失败时显示的错误。"
+  },
+  "@astryx.comments.sendFailed": {
+    "defaultMessage": "无法发送此评论。",
+    "description": "实验室 Comments 面板中一条评论发布失败时显示的 Error Banner 标题，此时宿主未提供自己的消息。"
+  },
+  "@astryx.comments.threadLabel": {
+    "defaultMessage": "{name} 发布的主题帖",
+    "description": "用于在实验室 Comments 面板中打开或关闭评论线程的切换按钮的无障碍名称。`name` 是该线程第一条评论的作者。"
+  },
+  "@astryx.comments.unread": {
+    "defaultMessage": "新建",
+    "description": "实验室 Comments 面板中查看者尚未阅读的评论上的徽章。"
+  },
+  "@astryx.comments.unsavedDraft": {
+    "defaultMessage": "未保存的草稿。再次关闭将丢弃该草稿。",
+    "description": "当实验室 CommentThread 因回复或编辑含有未保存文本而拒绝首次关闭时，向屏幕阅读器播报此消息；再次在线程外按下或再次按 Escape 将丢弃草稿。"
+  },
+  "@astryx.comments.versionAuthor": {
+    "defaultMessage": "由 {name}",
+    "description": "在实验室评论面板的编辑历史对话框中，某个版本时间旁边的署名。`name` 是保存该版本的人。"
+  },
+  "@astryx.comments.viewHistory": {
+    "defaultMessage": "查看编辑历史",
+    "description": "实验室 Comments 面板中评论上“已编辑文本”按钮的无障碍名称，该按钮用于打开该评论的早期版本。"
+  },
+  "@astryx.comments.viewReplies": {
+    "defaultMessage": "查看 {count, plural, one {# 条回复} other {# 条回复}}",
+    "description": "实验室 Comments 面板中折叠评论线程下方的文本按钮，点击可展开该线程。`count` 为回复数量。"
+  },
+  "@astryx.comments.commentsLabel": {
+    "defaultMessage": "{label} 中的线程",
+    "description": "实验室 Comments 面板中评论串滚动列表的无障碍名称。`label` 是面板自身的无障碍名称，例如 \"Comments\" 或 \"Launch plan\"。"
+  },
+  "@astryx.comments.emptyDescription": {
+    "defaultMessage": "以评论开始讨论。",
+    "description": "可评论的查看者在实验室评论面板空状态标题下的描述。"
+  },
+  "@astryx.comments.emptyReadOnlyDescription": {
+    "defaultMessage": "此条目暂无讨论。",
+    "description": "只读的实验室 Comments 面板空状态标题下的描述。"
+  },
+  "@astryx.comments.emptyTitle": {
+    "defaultMessage": "暂无评论",
+    "description": "没有评论或动态的实验室评论面板空状态标题。"
+  },
+  "@astryx.comments.label": {
+    "defaultMessage": "评论",
+    "description": "实验室 Comments 区域的默认无障碍名称，该区域存放关于某一项的评论串。宿主通常用该项自身的名词覆盖它。"
+  },
+  "@astryx.comments.loadFailed": {
+    "defaultMessage": "评论无法加载",
+    "description": "实验室评论面板中评论加载失败时显示的错误横幅标题。"
+  },
+  "@astryx.comments.loadOlder": {
+    "defaultMessage": "加载更早的评论",
+    "description": "位于实验室 Comments 面板讨论串上方的按钮，用于加载上一页评论。"
+  },
+  "@astryx.comments.loading": {
+    "defaultMessage": "正在加载评论",
+    "description": "屏幕阅读器读取的视觉隐藏文本，同时实验室 Comments 面板显示评论形状的加载占位符。"
+  },
+  "@astryx.comments.olderFailed": {
+    "defaultMessage": "较早的评论无法加载",
+    "description": "较早评论页面加载失败时，实验 Comments 面板中显示的错误横幅标题；其后跟随重试操作。"
+  },
+  "@astryx.comments.postFailed": {
+    "defaultMessage": "你的评论无法发布。",
+    "description": "实验室评论面板的新评论输入框上方显示的错误提示，在发布失败时出现；草稿会保留，并附带一个“重试”操作。"
+  },
+  "@astryx.infoTip.label": {
+    "defaultMessage": "更多信息",
+    "description": "InfoTip 的默认无障碍名称。InfoTip 是一个小型信息图标按钮，按下后会显示其旁边标签、值或指标的帮助信息。"
+  },
+  "@astryx.navigationStack.back": {
+    "defaultMessage": "返回",
+    "description": "返回按钮的标签，用于 lab NavigationStack 导航栏中，当返回的目标屏幕自身没有标题时显示。点击返回上一屏幕；保持简短，与 iOS 导航栏一致。"
+  }
+}

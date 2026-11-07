@@ -1,0 +1,1 @@
+自查（每次完成前都要做）：重读你写的文件。如果看到 className=、style={{...}}、导入的 .css / @apply、Tailwind 工具类、用于布局的裸 <div>/<span>，或硬编码的 #hex/rgb()/px/rem——说明你偏离了 Astryx。逐项替换为 Astryx 组件或 xstyle prop + token。不确定某个组件是否存在时，运行 `astryx search "<thing>"` / `astryx component <Name>`——不要用 CSS 手写实现。只有当文件完全由 Astryx 组件 + xstyle/token 构成、不含任何原生 CSS/Tailwind 时才算完成。
